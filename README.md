@@ -1,5 +1,5 @@
 # mac-setup
-My MacOS configurations. Makes it easy when I switch machines
+My MacOS configurations. Makes it easy when I switch machines.
 
 ## Configs 
 These include iTerm, tmux and vim configuration files
