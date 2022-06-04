@@ -1,8 +1,8 @@
-# mac-setup
-My MacOS configurations. Makes it easy when I switch machines.
+#dotfiles
+My dotfiles 
 
 ## Configs 
-These include iTerm, tmux and vim configuration files
+These include iTerm, tmux and nvim configuration files
 
 ### For neovim
 Edit this 
