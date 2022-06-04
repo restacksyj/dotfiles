@@ -1,0 +1,1 @@
+/Users/yashjajoo/.fig/shell/post.fish
