@@ -1,0 +1,60 @@
+# This is a demo config to bring across some of the most important commands more easily.
+# This is meant to be changed and configured, as it is intentionally kept sparse.
+# For a more advanced configuration example see https://github.com/FelixKratz/SketchyBar/discussions/47#discussioncomment-2027233
+
+##### Bar Appearance #####
+# Configuring the general appearance of the bar, these are only some of the
+# options available. For all options see:
+# https://felixkratz.github.io/SketchyBar/config/bar
+# If you are looking for other colors, see the color picker:
+# https://felixkratz.github.io/SketchyBar/config/tricks#color-picker
+
+sketchybar --bar height=32        \
+                 blur_radius=50   \
+                 position=top     \
+                 padding_left=5   \
+                 padding_right=5  \
+                 color=0x44000000
+
+
+##### Changing Defaults #####
+# We now change some default values that are applied to all further items
+# For a full list of all available item properties see:
+# https://felixkratz.github.io/SketchyBar/config/items
+
+sketchybar --default updates=when_shown                    \
+                     drawing=on                            \
+                     icon.font="Hack Nerd Font:Bold:17.0"  \
+                     icon.color=0xffffffff                 \
+                     label.font="Hack Nerd Font:Bold:14.0" \
+                     label.color=0xffffffff                \
+                     label.padding_left=4                  \
+                     label.padding_right=4                 \
+                     icon.padding_left=8                   \
+                     icon.padding_right=8
+
+##### Adding Mission Control Space Indicators #####
+# Now we add some space components:
+# https://felixkratz.github.io/SketchyBar/config/components#space----associate-mission-control-spaces-with-an-item
+# to indicate active and available mission control spaces
+
+sketchybar --add space code left                              \
+           --set code associated_display=1                    \
+                      associated_space=1                      \
+                      icon.font="Hack Nerd Font:Bold:20.0"    \
+                      icon=                                  \
+                      icon.highlight_color=0xff48aa2a         \
+                      label=code                              \
+                      click_script="yabai -m space --focus 1" \
+                                                              \
+           --add space tex left                               \
+           --set tex  associated_display=1                    \
+                      associated_space=2                      \
+                      icon=                                  \
+                      icon.highlight_color=0xfffab402         \
+                      label=tex                               \
+                      click_script="yabai -m space --focus 2"
+
+##### Adding Left Items #####
+# We add some regular items to the left side of the bar
+# only the properties deviatin

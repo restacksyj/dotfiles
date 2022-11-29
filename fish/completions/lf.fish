@@ -1,0 +1,1 @@
+~/.config/fish/lf.fish
