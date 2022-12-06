@@ -1,0 +1,19 @@
+pane	admin-backend	1	0	:-	1	~/D/f/admin-backend	:/Users/yashjajoo/Documents/freightbro/admin-backend	1	fish	:/usr/local/bin/fish
+pane	admin-backend	2	1	:*	1	~/D/f/admin-backend	:/Users/yashjajoo/Documents/freightbro/admin-backend	1	fish	:/usr/local/bin/fish
+pane	admin-frontend	1	1	:*	1	nvim . ~/D/f/admin-frontend	:/Users/yashjajoo/Documents/freightbro/admin-frontend	1	nvim	:/usr/local/bin/fish
+pane	api-service	1	1	:*	1	go run main.go ~/D/f/api-service	:/Users/yashjajoo/Documents/freightbro/api-service	1	go	:/usr/local/bin/fish
+pane	fb-notifications	1	1	:*	1	~/D/f/fb-notifications	:/Users/yashjajoo/Documents/freightbro/fb-notifications	1	fish	:/usr/local/bin/fish
+pane	fb-shipments	1	1	:*	1	nvim . ~/D/f/fb-shipments	:/Users/yashjajoo/Documents/freightbro/fb-shipments	1	nvim	:/usr/local/bin/fish
+pane	fb-shipper	1	0	:-	1	nvim . ~/D/f/fb-shipper	:/Users/yashjajoo/Documents/freightbro/fb-shipper	1	nvim	:/usr/local/bin/fish
+pane	fb-shipper	2	1	:*	1	~/D/f/fb-shipper	:/Users/yashjajoo/Documents/freightbro/fb-shipper	1	fish	:/usr/local/bin/fish
+pane	projects	1	1	:*	1	nvim index.js ~/D/f/saheb	:/Users/yashjajoo/Documents/freightify/saheb	1	nvim	:/usr/local/bin/fish
+window	admin-backend	1	:fish	0	:-	d7d8,130x41,0,0,29	:
+window	admin-backend	2	:fish	1	:*	d7d2,130x41,0,0,42	:
+window	admin-frontend	1	:nvim	1	:*	57d9,130x41,0,0,39	:
+window	api-service	1	:go	1	:*	57d7,130x41,0,0,37	:
+window	fb-notifications	1	:fish	1	:*	57d5,130x41,0,0,35	:
+window	fb-shipments	1	:nvim	1	:*	6273,142x46,0,0,33	:
+window	fb-shipper	1	:nvim	0	:-	57d3,130x41,0,0,14	:
+window	fb-shipper	2	:fish	1	:*	e271,142x46,0,0,22	:
+window	projects	1	:nvim	1	:*	57d1,130x41,0,0,31	:
+state	fb-shipments	fb-shipper

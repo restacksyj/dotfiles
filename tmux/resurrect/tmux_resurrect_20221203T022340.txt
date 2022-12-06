@@ -1,0 +1,11 @@
+pane	fb-rates	1	1	:*	1	vi ~/D/f/fb-rates	:/Users/yashjajoo/Documents/freightbro/fb-rates	1	nvim	:/usr/local/bin/fish
+pane	fb-shipper	1	0	:-	1	php artisan serve ~/D/f/fb-shipper	:/Users/yashjajoo/Documents/freightbro/fb-shipper/public	1	php	:/usr/local/bin/fish
+pane	fb-shipper	2	1	:*	1	vi ~/D/f/fb-shipper	:/Users/yashjajoo/Documents/freightbro/fb-shipper	1	nvim	:/usr/local/bin/fish
+pane	golang	1	1	:*	1	~/D/p/p/golang	:/Users/yashjajoo/Documents/personal/projects/golang	1	fish	:/usr/local/bin/fish
+pane	rust-apps	1	1	:*	1	~/D/p/p/rust-apps	:/Users/yashjajoo/Documents/personal/projects/rust-apps	1	fish	:/usr/local/bin/fish
+window	fb-rates	1	:nvim	1	:*	e275,142x46,0,0,26	:
+window	fb-shipper	1	:php	0	:-	c481,142x46,0,0,4	:
+window	fb-shipper	2	:nvim	1	:*	e276,142x46,0,0,65	:
+window	golang	1	:fish	1	:*	627a,142x46,0,0,59	:
+window	rust-apps	1	:fish	1	:*	6278,142x46,0,0,38	:
+state	fb-shipper	golang

@@ -1,0 +1,11 @@
+pane	14	1	1	:*	1	~/D/p/p/golang	:/Users/yashjajoo/Documents/personal/projects/golang	1	fish	:/usr/local/bin/fish
+pane	admin-frontend	1	1	:*	1	nvim . ~/D/f/admin-frontend	:/Users/yashjajoo/Documents/freightbro/admin-frontend	1	nvim	:/usr/local/bin/fish
+pane	api-service	1	1	:*	1	~/.hammerspoon	:/Users/yashjajoo/.hammerspoon	1	fish	:/usr/local/bin/fish
+pane	fb-notifications	1	1	:*	1	nvim . ~/D/f/fb-shipper	:/Users/yashjajoo/Documents/freightbro/fb-shipper	1	nvim	:/usr/local/bin/fish
+pane	fb-notifications	2	0	:-	1	php artisan serve ~/D/f/fb-shipper	:/Users/yashjajoo/Documents/freightbro/fb-shipper/public	1	php	:/usr/local/bin/fish
+window	14	1	:fish	1	:*	e276,142x46,0,0,46	:
+window	admin-frontend	1	:nvim	1	:*	57d9,130x41,0,0,39	:
+window	api-service	1	:fish	1	:*	6277,142x46,0,0,37	:
+window	fb-notifications	1	:nvim	1	:*	6275,142x46,0,0,35	:
+window	fb-notifications	2	:php	0	:-	e279,142x46,0,0,49	:
+state	fb-notifications	api-service

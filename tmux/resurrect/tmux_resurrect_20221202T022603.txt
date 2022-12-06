@@ -1,0 +1,5 @@
+pane	defaul	1	1	:*	1	~	:/Users/yashjajoo	1	fish	:/usr/local/bin/fish
+pane	fb-shipper	1	1	:*	1	~/D/f/fb-shipper	:/Users/yashjajoo/Documents/freightbro/fb-shipper	1	fish	:/usr/local/bin/fish
+window	defaul	1	:fish	1	:*	c47d,142x46,0,0,0	:
+window	fb-shipper	1	:fish	1	:*	c481,142x46,0,0,4	:
+state	fb-shipper	

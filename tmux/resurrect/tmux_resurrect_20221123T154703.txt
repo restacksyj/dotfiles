@@ -1,0 +1,7 @@
+pane	default	1	1	:*	1	~/.c/l/scripts	:/Users/yashjajoo/.config/local/scripts	1	fish	:/usr/local/bin/fish
+pane	local	1	1	:*	1	~/.c/l/scripts	:/Users/yashjajoo/.config/local/scripts	1	fish	:/usr/local/bin/fish
+pane	nvim	1	1	:*	1	~/.c/nvim	:/Users/yashjajoo/.config/nvim	1	fish	:/usr/local/bin/fish
+window	default	1	:fish	1	:*	af3d,130x41,0,0,0	:
+window	local	1	:fish	1	:*	af44,130x41,0,0,7	:
+window	nvim	1	:fish	1	:*	af42,130x41,0,0,5	:
+state	local	nvim

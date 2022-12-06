@@ -1,0 +1,43 @@
+pane	12	1	1	:*	1	~	:/Users/yashjajoo	1	fish	:/usr/local/bin/fish
+pane	admin-backend	1	1	:*	1	vi ~/D/f/admin-backend	:/Users/yashjajoo/Documents/freightbro/admin-backend	1	nvim	:/usr/local/bin/fish
+pane	admin-frontend	1	0	:-	1	vi ~/D/f/admin-frontend	:/Users/yashjajoo/Documents/freightbro/admin-frontend	1	nvim	:/usr/local/bin/fish
+pane	admin-frontend	2	0	:	1	vi ~/D/f/admin-frontend	:/Users/yashjajoo/Documents/freightbro/admin-frontend	1	nvim	:/usr/local/bin/fish
+pane	admin-frontend	3	1	:*	1	yashjajooFb.local	:/Users/yashjajoo/Documents/freightbro/admin-frontend	1	fish	:bash /Users/yashjajoo/.config/local/scripts/tmux-sessionizer
+pane	aoc2022	1	1	:*	1	~/D/p/p/aoc2022	:/Users/yashjajoo/Documents/personal/projects/aoc2022	1	fish	:/usr/local/bin/fish
+pane	aoc2022	2	0	:-	1	~/D/p/p/aoc2022	:/Users/yashjajoo/Documents/personal/projects/aoc2022	1	fish	:/usr/local/bin/fish
+pane	api-service	1	1	:*	1	vi ~/D/f/api-service	:/Users/yashjajoo/Documents/freightbro/api-service	1	nvim	:/usr/local/bin/fish
+pane	fb-rates	1	1	:*	1	vi ~/D/f/fb-rates	:/Users/yashjajoo/Documents/freightbro/fb-rates	1	nvim	:/usr/local/bin/fish
+pane	fb-rates	2	0	:-	1	node index.js ~/D/f/fb-rates	:/Users/yashjajoo/Documents/freightbro/fb-rates	1	node	:/usr/local/bin/fish
+pane	fb-shipments	1	1	:*	1	vi ~/D/f/fb-shipments	:/Users/yashjajoo/Documents/freightbro/fb-shipments	1	nvim	:/usr/local/bin/fish
+pane	fb-shipper	1	0	:-	1	php artisan serve ~/D/f/fb-shipper	:/Users/yashjajoo/Documents/freightbro/fb-shipper/public	1	php	:/usr/local/bin/fish
+pane	fb-shipper	2	1	:*	1	vi ~/D/f/fb-shipper	:/Users/yashjajoo/Documents/freightbro/fb-shipper	1	nvim	:/usr/local/bin/fish
+pane	golang	1	1	:*	1	vi main.go ~/D/p/p/golang	:/Users/yashjajoo/Documents/personal/projects/golang	1	nvim	:/usr/local/bin/fish
+pane	master-api-service	1	1	:*	1	~/D/f/master-api-service	:/Users/yashjajoo/Documents/freightbro/master-api-service	1	fish	:/usr/local/bin/fish
+pane	nvim	1	1	:*	1	vi ~/.c/nvim	:/Users/yashjajoo/.config/nvim	1	nvim	:/usr/local/bin/fish
+pane	projects	1	1	:*	1	vi ~/D/p/p/lyrik_server	:/Users/yashjajoo/Documents/personal/projects/lyrik_server	1	nvim	:/usr/local/bin/fish
+pane	projects	2	0	:-	1	~/D/p/p/lyrik_server	:/Users/yashjajoo/Documents/personal/projects/lyrik_server	1	fish	:/usr/local/bin/fish
+pane	projects	3	0	:	1	~/D/p/projects	:/Users/yashjajoo/Documents/personal/projects	1	fish	:/usr/local/bin/fish
+pane	rust-apps	1	0	:-	1	vi ~/D/p/p/r/guess-game	:/Users/yashjajoo/Documents/personal/projects/rust-apps/guess-game	1	nvim	:/usr/local/bin/fish
+pane	rust-apps	2	1	:*	1	vi ~/D/p/p/r/guess-game	:/Users/yashjajoo/Documents/personal/projects/rust-apps/guess-game	1	nvim	:/usr/local/bin/fish
+window	12	1	:fish	1	:*	e274,142x46,0,0,82	:
+window	admin-backend	1	:nvim	1	:*	e276,142x46,0,0,84	:
+window	admin-frontend	1	:nvim	0	:-	e279,142x46,0,0,87	:
+window	admin-frontend	2	:nvim	0	:	e27a,142x46,0,0,88	:
+window	admin-frontend	3	:fish	1	:*	b16e,142x46,0,0,107	:
+window	aoc2022	1	:fish	1	:*	6278,142x46,0,0,76	:
+window	aoc2022	2	:fish	0	:-	e272,142x46,0,0,80	:
+window	api-service	1	:nvim	1	:*	316c,142x46,0,0,114	:
+window	fb-rates	1	:nvim	1	:*	e275,142x46,0,0,26	:
+window	fb-rates	2	:node	0	:-	3169,142x46,0,0,111	:
+window	fb-shipments	1	:nvim	1	:*	b16a,142x46,0,0,103	:
+window	fb-shipper	1	:php	0	:-	c481,142x46,0,0,4	:
+window	fb-shipper	2	:nvim	1	:*	e276,142x46,0,0,65	:
+window	golang	1	:nvim	1	:*	627a,142x46,0,0,59	:
+window	master-api-service	1	:fish	1	:*	3171,142x46,0,0,119	:
+window	nvim	1	:nvim	1	:*	6274,142x46,0,0,91	:
+window	projects	1	:nvim	1	:*	e079,142x45,0,0,68	:
+window	projects	2	:fish	0	:-	6073,142x45,0,0,71	:
+window	projects	3	:fish	0	:	6274,142x46,0,0,72	:
+window	rust-apps	1	:nvim	0	:-	6278,142x46,0,0,38	:
+window	rust-apps	2	:nvim	1	:*	b16d,142x46,0,0,125	:
+state	api-service	rust-apps

@@ -1,0 +1,7 @@
+pane	fb-shipper	1	0	:	1	php artisan serve ~/D/f/fb-shipper	:/Users/yashjajoo/Documents/freightbro/fb-shipper/public	1	php	:/usr/local/bin/fish
+pane	fb-shipper	2	0	:-	1	node index.js ~/D/f/fb-rates	:/Users/yashjajoo/Documents/freightbro/fb-rates	1	node	:/usr/local/bin/fish
+pane	fb-shipper	3	1	:*	1	~/D/f/fb-shipper	:/Users/yashjajoo/Documents/freightbro/fb-shipper	1	fish	:/usr/local/bin/fish
+window	fb-shipper	1	:php	0	:	b03f,132x41,0,0,2	:
+window	fb-shipper	2	:node	0	:-	b040,132x41,0,0,3	:
+window	fb-shipper	3	:fish	1	:*	b041,132x41,0,0,4	:
+state	fb-shipper	

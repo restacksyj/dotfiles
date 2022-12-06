@@ -1,0 +1,9 @@
+pane	config	1	0	:-	1	~/.c/nvim	:/Users/yashjajoo	1	fish	:figterm
+pane	config	2	1	:*	1	~/.config	:/Users/yashjajoo	1	fish	:figterm
+pane	rates	1	0	:-	1	~/D/f/fb-rates	:/Users/yashjajoo	1	fish	:figterm
+pane	rates	2	1	:*	1	~/D/f/fb-notifications	:/Users/yashjajoo	1	fish	:figterm
+window	config	1	:fish	0	:-	b040,132x41,0,0,3	:
+window	config	2	:fish	1	:*	b041,132x41,0,0,4	:
+window	rates	1	:fish	0	:-	b042,132x41,0,0,5	:
+window	rates	2	:fish	1	:*	b043,132x41,0,0,6	:
+state	rates	

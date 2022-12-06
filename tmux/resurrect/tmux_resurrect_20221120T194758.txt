@@ -1,0 +1,3 @@
+pane	restacksyj	1	1	:*	1	~/D/p/projects	:/Users/yashjajoo	1	fish	:figterm
+window	restacksyj	1	:fish	1	:*	b03d,132x41,0,0,0	:
+state	restacksyj	

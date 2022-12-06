@@ -1,0 +1,36 @@
+pane	0	1	0	:	1	~	:/Users/yashjajoo	0	fish	:/usr/local/Cellar/fish/3.4.1/bin/fish
+pane	0	1	0	:	2	~	:/Users/yashjajoo	1	fish	:/usr/local/Cellar/fish/3.4.1/bin/fish
+pane	0	2	0	:-	1	~	:/Users/yashjajoo	1	fish	:/usr/local/Cellar/fish/3.4.1/bin/fish
+pane	0	3	1	:*	1	~	:/Users/yashjajoo	1	fish	:/usr/local/Cellar/fish/3.4.1/bin/fish
+pane	1	1	1	:*	1	~	:/Users/yashjajoo	1	fish	:/usr/local/Cellar/fish/3.4.1/bin/fish
+pane	3	1	1	:*	1	~/.c/tmux	:/Users/yashjajoo/.config/tmux	1	fish	:/usr/local/Cellar/fish/3.4.1/bin/fish
+pane	4	1	1	:*	1	~	:/Users/yashjajoo	1	fish	:/usr/local/Cellar/fish/3.4.1/bin/fish
+pane	5	1	1	:*	1	~	:/Users/yashjajoo	1	fish	:/usr/local/Cellar/fish/3.4.1/bin/fish
+pane	delete	1	0	:-	1	npm run start ~/D/f/admin-frontend	:/Users/yashjajoo	0	fish	:/usr/local/Cellar/fish/3.4.1/bin/fish
+pane	delete	1	0	:-	2	~/D/f/admin-backend	:/Users/yashjajoo	1	fish	:/usr/local/Cellar/fish/3.4.1/bin/fish
+pane	delete	2	1	:*	1	~/D/f/fb-rates	:/Users/yashjajoo	1	fish	:/usr/local/Cellar/fish/3.4.1/bin/fish
+pane	delete	2	1	:*	2	php artisan serve ~/D/f/fb-shipper	:/Users/yashjajoo	0	fish	:/usr/local/Cellar/fish/3.4.1/bin/fish
+pane	delete	2	1	:*	3	node index.js ~/D/f/fb-notifications	:/Users/yashjajoo	0	fish	:/usr/local/Cellar/fish/3.4.1/bin/fish
+pane	slab	1	0	:	1	~	:/Users/yashjajoo	1	fish	:/usr/local/Cellar/fish/3.4.1/bin/fish
+pane	slab	2	0	:	1	~/D/f/fb-shipper	:/Users/yashjajoo/Documents/freightbro/fb-shipper	1	fish	:/usr/local/Cellar/fish/3.4.1/bin/fish
+pane	slab	3	0	:	1	~	:/Users/yashjajoo	0	fish	:/usr/local/Cellar/fish/3.4.1/bin/fish
+pane	slab	3	0	:	2	~	:/Users/yashjajoo	1	fish	:/usr/local/Cellar/fish/3.4.1/bin/fish
+pane	slab	4	0	:	1	~	:/Users/yashjajoo	1	fish	:/usr/local/Cellar/fish/3.4.1/bin/fish
+pane	slab	5	0	:-	1	~	:/Users/yashjajoo	1	fish	:/usr/local/Cellar/fish/3.4.1/bin/fish
+pane	slab	6	1	:*	1	~	:/Users/yashjajoo	1	fish	:/usr/local/Cellar/fish/3.4.1/bin/fish
+window	0	1	:admin f&b	0	:	ec44,110x39,0,0{54x39,0,0,1,55x39,55,0,2}	off
+window	0	2	:rates	0	:-	ccc0,110x39,0,0,3	off
+window	0	3	:fish	1	:*	ccc1,110x39,0,0,4	:
+window	1	1	:fish	1	:*	ccc2,110x39,0,0,5	:
+window	3	1	:fish	1	:*	ccc3,110x39,0,0,6	:
+window	4	1	:fish	1	:*	ccc4,110x39,0,0,7	:
+window	5	1	:fish	1	:*	ccc5,110x39,0,0,8	:
+window	delete	1	:admin	0	:-	40ca,132x41,0,0{56x41,0,0,9,75x41,57,0,10}	off
+window	delete	2	:rates,shipper,notif	1	:*	8a5a,132x41,0,0[132x20,0,0,11,132x20,0,21{66x20,0,21,12,65x20,67,21,13}]	off
+window	slab	1	:quotes	0	:	6693,110x39,0,0,14	off
+window	slab	2	:shipper	0	:	6694,110x39,0,0,15	off
+window	slab	3	:admin-f&b	0	:	4466,110x39,0,0{55x39,0,0,16,54x39,56,0,17}	off
+window	slab	4	:freightify-frontend	0	:	6697,110x39,0,0,18	off
+window	slab	5	:rates	0	:-	6698,110x39,0,0,19	off
+window	slab	6	:some-term	1	:*	e68f,110x39,0,0,20	off
+state	delete	slab

@@ -1,0 +1,7 @@
+pane	defaul	1	1	:*	1	~	:/Users/yashjajoo	1	fish	:/usr/local/bin/fish
+pane	fb-rates	1	1	:*	1	~/D/f/fb-rates	:/Users/yashjajoo/Documents/freightbro/fb-rates	1	fish	:/usr/local/bin/fish
+pane	fb-shipper	1	1	:*	1	~/D/f/fb-shipper	:/Users/yashjajoo/Documents/freightbro/fb-shipper	1	fish	:/usr/local/bin/fish
+window	defaul	1	:fish	1	:*	b03d,132x41,0,0,0	:
+window	fb-rates	1	:fish	1	:*	b03f,132x41,0,0,2	:
+window	fb-shipper	1	:fish	1	:*	c481,142x46,0,0,4	:
+state	fb-shipper	fb-rates

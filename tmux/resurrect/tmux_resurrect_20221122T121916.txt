@@ -1,0 +1,15 @@
+pane	config	1	1	:*	1	~/.c/nvim	:/Users/yashjajoo/.config/nvim	1	fish	:/usr/local/bin/fish
+pane	rates	1	0	:	1	node -r dotenv/confi ~/D/f/fb-rates	:/Users/yashjajoo	1	fish	:figterm
+pane	rates	2	0	:	1	php artisan serve ~/D/f/fb-shipper	:/Users/yashjajoo/Documents/freightbro/fb-shipper/public	1	php	:/usr/local/bin/fish
+pane	rates	3	0	:	1	npm run dev ~/D/f/admin-backend	:/Users/yashjajoo/Documents/freightbro/admin-backend	1	node	:/usr/local/bin/fish
+pane	rates	4	0	:	1	npm run start ~/D/f/admin-frontend	:/Users/yashjajoo/Documents/freightbro/admin-frontend	1	node	:/usr/local/bin/fish
+pane	rates	5	0	:-	1	node -r dotenv/confi ~/D/f/fb-shipments	:/Users/yashjajoo/Documents/freightbro/fb-shipments	1	node	:/usr/local/bin/fish
+pane	rates	6	1	:*	1	~/D/f/fb-shipments	:/Users/yashjajoo/Documents/freightbro/fb-shipments	1	fish	:/usr/local/bin/fish
+window	config	1	:fish	1	:*	5854,132x41,0,0,15	:
+window	rates	1	:rates	0	:	b042,132x41,0,0,5	off
+window	rates	2	:shipper	0	:	5850,132x41,0,0,11	off
+window	rates	3	:backend	0	:	5851,132x41,0,0,12	off
+window	rates	4	:frontend	0	:	5852,132x41,0,0,13	off
+window	rates	5	:node	0	:-	5855,132x41,0,0,16	:
+window	rates	6	:nvim	1	:*	57d6,130x41,0,0,17	:
+state	rates	config

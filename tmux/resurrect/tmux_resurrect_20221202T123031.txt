@@ -1,0 +1,15 @@
+pane	defaul	1	1	:*	1	vi ~	:/Users/yashjajoo	1	nvim	:/usr/local/bin/fish
+pane	fb-rates	1	1	:*	1	vi ~/D/f/fb-rates	:/Users/yashjajoo/Documents/freightbro/fb-rates	1	nvim	:/usr/local/bin/fish
+pane	fb-shipments	1	0	:-	1	~/D/f/fb-shipments	:/Users/yashjajoo/Documents/freightbro/fb-shipments	1	fish	:/usr/local/bin/fish
+pane	fb-shipments	2	1	:*	1	~/D/f/fb-shipments	:/Users/yashjajoo/Documents/freightbro/fb-shipments	1	fish	:/usr/local/bin/fish
+pane	fb-shipper	1	1	:*	1	php artisan serve ~/D/f/fb-shipper	:/Users/yashjajoo/Documents/freightbro/fb-shipper/public	1	php	:/usr/local/bin/fish
+pane	local	1	1	:*	1	~/.c/l/scripts	:/Users/yashjajoo/.config/local/scripts	1	fish	:/usr/local/bin/fish
+pane	rust-apps	1	1	:*	1	~/D/p/p/rust-apps	:/Users/yashjajoo/Documents/personal/projects/rust-apps	1	fish	:/usr/local/bin/fish
+window	defaul	1	:nvim	1	:*	c47d,142x46,0,0,0	:
+window	fb-rates	1	:nvim	1	:*	e275,142x46,0,0,26	:
+window	fb-shipments	1	:fish	0	:-	e271,142x46,0,0,41	:
+window	fb-shipments	2	:fish	1	:*	e272,142x46,0,0,42	:
+window	fb-shipper	1	:php	1	:*	c481,142x46,0,0,4	:
+window	local	1	:fish	1	:*	e277,142x46,0,0,28	:
+window	rust-apps	1	:fish	1	:*	6278,142x46,0,0,38	:
+state	fb-shipments	fb-rates
