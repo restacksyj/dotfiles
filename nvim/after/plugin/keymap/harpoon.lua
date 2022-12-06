@@ -1,5 +1,3 @@
-
-
 local nnoremap = require("restacksyj.keymap").nnoremap
 
 local silent = { silent = true }

@@ -1,3 +1,5 @@
+import:
+  - /Users/yashjajoo/.config/alacritty/rose-pine.yml
 # # cSpell:words alacritty lfcd
 live_config_reload: true
 #

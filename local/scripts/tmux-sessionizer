@@ -8,7 +8,7 @@ else
 	# get my project's namespaces
 	# I have it organized in namespaces per organization, so I have
 	# my personal org (caarlos0), one for work, one for goreleaser, and so on.
-	find ~/Documents/* ~/.config -type d -maxdepth 0 |
+	find ~/Documents/freightbro ~Documents/freightify  ~/Documents/personal ~/Documents/personal/projects ~/.config -type d -maxdepth 0 |
 	while read -r p; do
 		# get the projects in each namespace with their zoxide scores
 		zoxide query -l -s "$p/";

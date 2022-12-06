@@ -26,6 +26,7 @@ SETUVAR _tide_prompt_10681:\x1d
 SETUVAR _tide_prompt_10864:\x1d
 SETUVAR _tide_prompt_1090:\x1d
 SETUVAR _tide_prompt_10951:\x1d
+SETUVAR _tide_prompt_11038:\x1d
 SETUVAR _tide_prompt_11049:\x1d
 SETUVAR _tide_prompt_11107:\x1d
 SETUVAR _tide_prompt_11141:\x1d
@@ -35,6 +36,7 @@ SETUVAR _tide_prompt_11214:\x1d
 SETUVAR _tide_prompt_11291:\x1d
 SETUVAR _tide_prompt_11338:\x1d
 SETUVAR _tide_prompt_11371:\x1d
+SETUVAR _tide_prompt_11385:\x1d
 SETUVAR _tide_prompt_11444:\x1d
 SETUVAR _tide_prompt_11505:\x1d
 SETUVAR _tide_prompt_11611:\x1d
@@ -49,7 +51,6 @@ SETUVAR _tide_prompt_12753:\x1d
 SETUVAR _tide_prompt_1445:\x1d
 SETUVAR _tide_prompt_14714:\x1d
 SETUVAR _tide_prompt_1513:\x1d
-SETUVAR _tide_prompt_15425:\x1d
 SETUVAR _tide_prompt_15680:\x1d
 SETUVAR _tide_prompt_1574:\x1d
 SETUVAR _tide_prompt_1611:\x1d
@@ -64,6 +65,7 @@ SETUVAR _tide_prompt_19341:\x1d
 SETUVAR _tide_prompt_19490:\x1d
 SETUVAR _tide_prompt_19597:\x1d
 SETUVAR _tide_prompt_2021:\x1d
+SETUVAR _tide_prompt_22783:\x1d
 SETUVAR _tide_prompt_23647:\x1d
 SETUVAR _tide_prompt_2430:\x1d
 SETUVAR _tide_prompt_24398:\x1d
@@ -74,12 +76,17 @@ SETUVAR _tide_prompt_27097:\x1d
 SETUVAR _tide_prompt_27157:\x1d
 SETUVAR _tide_prompt_2881:\x1d
 SETUVAR _tide_prompt_28847:\x1d
+SETUVAR _tide_prompt_29530:\x1d
+SETUVAR _tide_prompt_29706:\x1d
 SETUVAR _tide_prompt_29849:\x1d
 SETUVAR _tide_prompt_3042:\x1d
+SETUVAR _tide_prompt_3089:\x1d
+SETUVAR _tide_prompt_32291:\x1d
 SETUVAR _tide_prompt_3231:\x1d
 SETUVAR _tide_prompt_3240:\x1d
 SETUVAR _tide_prompt_32919:\x1d
 SETUVAR _tide_prompt_3310:\x1d
+SETUVAR _tide_prompt_33285:\x1d
 SETUVAR _tide_prompt_3368:\x1d
 SETUVAR _tide_prompt_3475:\x1d
 SETUVAR _tide_prompt_3501:\x1d
@@ -120,7 +127,9 @@ SETUVAR _tide_prompt_43740:\x1d
 SETUVAR _tide_prompt_4459:\x1d
 SETUVAR _tide_prompt_4485:\x1d
 SETUVAR _tide_prompt_45246:\x1d
+SETUVAR _tide_prompt_45377:\x1d
 SETUVAR _tide_prompt_4639:\x1d
+SETUVAR _tide_prompt_46508:\x1d
 SETUVAR _tide_prompt_4678:\x1d
 SETUVAR _tide_prompt_4716:\x1d
 SETUVAR _tide_prompt_4770:\x1d
@@ -140,7 +149,6 @@ SETUVAR _tide_prompt_5082:\x1d
 SETUVAR _tide_prompt_5085:\x1d
 SETUVAR _tide_prompt_5141:\x1d
 SETUVAR _tide_prompt_51651:\x1d
-SETUVAR _tide_prompt_51953:\x1d
 SETUVAR _tide_prompt_5203:\x1d
 SETUVAR _tide_prompt_5234:\x1d
 SETUVAR _tide_prompt_5255:\x1d
@@ -153,13 +161,14 @@ SETUVAR _tide_prompt_54627:\x1d
 SETUVAR _tide_prompt_5487:\x1d
 SETUVAR _tide_prompt_5503:\x1d
 SETUVAR _tide_prompt_55326:\x1d
-SETUVAR _tide_prompt_55341:\x1d
 SETUVAR _tide_prompt_5557:\x1d
 SETUVAR _tide_prompt_5586:\x1d
 SETUVAR _tide_prompt_55906:\x1d
 SETUVAR _tide_prompt_55970:\x1d
 SETUVAR _tide_prompt_5654:\x1d
+SETUVAR _tide_prompt_57069:\x1d
 SETUVAR _tide_prompt_5779:\x1d
+SETUVAR _tide_prompt_58588:\x1d
 SETUVAR _tide_prompt_6052:\x1d
 SETUVAR _tide_prompt_60860:\x1d
 SETUVAR _tide_prompt_60907:\x1d
@@ -169,7 +178,6 @@ SETUVAR _tide_prompt_6367:\x1d
 SETUVAR _tide_prompt_63922:\x1d
 SETUVAR _tide_prompt_6402:\x1d
 SETUVAR _tide_prompt_64021:\x1d
-SETUVAR _tide_prompt_64306:\x1d
 SETUVAR _tide_prompt_6497:\x1d
 SETUVAR _tide_prompt_6517:\x1d
 SETUVAR _tide_prompt_65461:\x1d
@@ -178,7 +186,9 @@ SETUVAR _tide_prompt_66015:\x1d
 SETUVAR _tide_prompt_66426:\x1d
 SETUVAR _tide_prompt_6643:\x1d
 SETUVAR _tide_prompt_66547:\x1d
+SETUVAR _tide_prompt_66869:\x1d
 SETUVAR _tide_prompt_6711:\x1d
+SETUVAR _tide_prompt_67394:\x1d
 SETUVAR _tide_prompt_6842:\x1d
 SETUVAR _tide_prompt_69514:\x1d
 SETUVAR _tide_prompt_6957:\x1d
@@ -187,6 +197,8 @@ SETUVAR _tide_prompt_70325:\x1d
 SETUVAR _tide_prompt_71497:\x1d
 SETUVAR _tide_prompt_7153:\x1d
 SETUVAR _tide_prompt_71889:\x1d
+SETUVAR _tide_prompt_72251:\x1d
+SETUVAR _tide_prompt_72927:\x1d
 SETUVAR _tide_prompt_7443:\x1d
 SETUVAR _tide_prompt_7455:\x1d
 SETUVAR _tide_prompt_7461:\x1d
@@ -198,6 +210,7 @@ SETUVAR _tide_prompt_7555:\x1d
 SETUVAR _tide_prompt_7579:\x1d
 SETUVAR _tide_prompt_75807:\x1d
 SETUVAR _tide_prompt_76059:\x1d
+SETUVAR _tide_prompt_76339:\x1d
 SETUVAR _tide_prompt_76577:\x1d
 SETUVAR _tide_prompt_76922:\x1d
 SETUVAR _tide_prompt_77269:\x1d
@@ -208,9 +221,12 @@ SETUVAR _tide_prompt_7998:\x1d
 SETUVAR _tide_prompt_8030:\x1d
 SETUVAR _tide_prompt_806:\x1d
 SETUVAR _tide_prompt_8112:\x1d
+SETUVAR _tide_prompt_81448:\x1d
 SETUVAR _tide_prompt_81777:\x1d
 SETUVAR _tide_prompt_8188:\x1d
+SETUVAR _tide_prompt_82410:\x1d
 SETUVAR _tide_prompt_8296:\x1d
+SETUVAR _tide_prompt_83398:\x1d
 SETUVAR _tide_prompt_8341:\x1d
 SETUVAR _tide_prompt_8411:\x1d
 SETUVAR _tide_prompt_8442:\x1d
@@ -223,12 +239,16 @@ SETUVAR _tide_prompt_86436:\x1d
 SETUVAR _tide_prompt_86975:\x1d
 SETUVAR _tide_prompt_8699:\x1d
 SETUVAR _tide_prompt_87774:\x1d
+SETUVAR _tide_prompt_8912:\x1d
+SETUVAR _tide_prompt_9023:\x1d
+SETUVAR _tide_prompt_90610:\x1d
 SETUVAR _tide_prompt_91238:\x1d
 SETUVAR _tide_prompt_9159:\x1d
 SETUVAR _tide_prompt_91780:\x1d
 SETUVAR _tide_prompt_9220:\x1d
 SETUVAR _tide_prompt_923:\x1d
 SETUVAR _tide_prompt_92991:\x1d
+SETUVAR _tide_prompt_94953:\x1d
 SETUVAR _tide_prompt_95125:\x1d
 SETUVAR _tide_prompt_9582:\x1d
 SETUVAR _tide_prompt_95944:\x1d
@@ -240,6 +260,7 @@ SETUVAR _tide_prompt_97242:\x1d
 SETUVAR _tide_prompt_97312:\x1d
 SETUVAR _tide_prompt_97397:\x1d
 SETUVAR _tide_prompt_97586:\x1d
+SETUVAR _tide_prompt_97604:\x1d
 SETUVAR _tide_prompt_97714:\x1d
 SETUVAR _tide_prompt_97832:\x1d
 SETUVAR _tide_prompt_97904:\x1d
@@ -282,7 +303,7 @@ SETUVAR fish_pager_color_description:B3A06D\x1eyellow\x1e\x2di
 SETUVAR fish_pager_color_prefix:cyan\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
 SETUVAR fish_pager_color_selected_background:\x2dr
-SETUVAR fish_user_paths:/Users/yashjajoo/\x2econfig/local/scripts\x1e/Users/yashjajoo/\x2epoetry/bin\x1e/usr/local/opt/php\x407\x2e0/sbin\x1e/usr/local/opt/php\x407\x2e0/bin\x1e/Users/yashjajoo/\x2ecargo/bin\x1e/usr/local/opt/php\x407\x2e1/sbin\x1e/usr/local/opt/php\x407\x2e1/bin\x1e/usr/local/opt/php\x407\x2e3/sbin\x1e/usr/local/opt/php\x407\x2e3/bin\x1e/usr/local/opt/php\x407\x2e2/sbin\x1e/usr/local/opt/php\x407\x2e2/bin\x1e/Users/yashjajoo/\x2efig/bin\x1e/Users/yashjajoo/Documents/development/flutter/bin\x1e/Users/yashjajoo/\x2elocal/bin
+SETUVAR fish_user_paths:/Users/yashjajoo/\x2eemacs\x2ed/bin\x1e/Users/yashjajoo/\x2econfig/local/scripts\x1e/Users/yashjajoo/\x2epoetry/bin\x1e/usr/local/opt/php\x407\x2e0/sbin\x1e/usr/local/opt/php\x407\x2e0/bin\x1e/Users/yashjajoo/\x2ecargo/bin\x1e/usr/local/opt/php\x407\x2e1/sbin\x1e/usr/local/opt/php\x407\x2e1/bin\x1e/usr/local/opt/php\x407\x2e3/sbin\x1e/usr/local/opt/php\x407\x2e3/bin\x1e/usr/local/opt/php\x407\x2e2/sbin\x1e/usr/local/opt/php\x407\x2e2/bin\x1e/Users/yashjajoo/\x2efig/bin\x1e/Users/yashjajoo/Documents/development/flutter/bin\x1e/Users/yashjajoo/\x2elocal/bin
 SETUVAR nvm_data:/Users/yashjajoo/\x2elocal/share/nvm
 SETUVAR nvm_default_version:v12
 SETUVAR nvm_mirror:https\x3a//nodejs\x2eorg/dist

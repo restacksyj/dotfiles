@@ -2,7 +2,8 @@ return require("packer").startup(function(use)
     use("wbthomason/packer.nvim")
 
     -- Simple plugins can be specified as strings
-    use("TimUntersberger/neogit")
+    -- use("TimUntersberger/neogit")
+    use("tpope/vim-fugitive")
 
     -- TJ created lodash of neovim
     use("nvim-lua/plenary.nvim")
@@ -59,8 +60,15 @@ return require("packer").startup(function(use)
         tag = "*"
     }
     use 'ray-x/go.nvim'
+    -- this is used for folding lines
+    use {'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async'}
 
-
+    use{'jose-elias-alvarez/null-ls.nvim'}
+    use{'MunifTanjim/eslint.nvim'}
+    use {
+    'kosayoda/nvim-lightbulb',
+    requires = 'antoinemadec/FixCursorHold.nvim',
+    }
 
 
 	--[[

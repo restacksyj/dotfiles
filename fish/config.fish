@@ -5,11 +5,23 @@ eval /Users/yashjajoo/opt/anaconda3/bin/conda "shell.fish" "hook" $argv | source
 # <<< conda initialize <<<
 set fish_greeting
 
+# alias vi="nvim ."
+# alias oldvim="\vim"
+
+function vi
+    if count $argv > /dev/null
+        nvim $argv
+    else
+        nvim .
+    end
+end
+
 #set theme_color_theme tide
 starship init fish | source
 zoxide init fish | source
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 export PATH="$HOME/.cargo/bin:$PATH"
+# load_nvm > /dev/stderr
 # alias vi=nvim
 # neofetch
 # export PATH=/Users/yashjajoo/.local/share/solana/install/active_release/bin

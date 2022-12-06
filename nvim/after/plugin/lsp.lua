@@ -20,14 +20,7 @@ local source_mapping = {
 cmp.setup({
 	snippet = {
 		expand = function(args)
-			-- For `vsnip` user.
-			-- vim.fn["vsnip#anonymous"](args.body)
-
-			-- For `luasnip` user.
 			require("luasnip").lsp_expand(args.body)
-
-			-- For `ultisnips` user.
-			-- vim.fn["UltiSnips#Anon"](args.body)
 		end,
 	},
 	mapping = cmp.mapping.preset.insert({
@@ -53,18 +46,10 @@ cmp.setup({
 	},
 
 	sources = {
-		-- tabnine completion? yayaya
-
+        { name = "nvim_lsp" },
 		{ name = "cmp_tabnine" },
-
-		{ name = "nvim_lsp" },
-
-		-- For luasnip user.
 		{ name = "luasnip" },
-
 		{ name = "buffer" },
-
-		-- { name = "youtube" },
 	},
 })
 
@@ -77,16 +62,27 @@ tabnine:setup({
 	snippet_placeholder = "..",
 })
 
+local capabilities = require('cmp_nvim_lsp').default_capabilities(
+            vim.lsp.protocol.make_client_capabilities()
+)
+-- this is for nvim-ufo folding lines
+capabilities.textDocument.foldingRange = {
+    dynamicRegistration = false,
+    lineFoldingOnly = true
+}
+
 local function config(_config)
 	return vim.tbl_deep_extend("force", {
+        capabilities = capabilities,
 		on_attach = function()
-			nnoremap("gd", function() vim.lsp.buf.definition() end)
-			nnoremap("K", function() vim.lsp.buf.hover() end)
-			nnoremap("<leader>vws", function() vim.lsp.buf.workspace_symbol() end)
+            local opts = { buffer = true}
+			nnoremap("gd", function() vim.lsp.buf.definition() end, opts)
+			nnoremap("K", function() vim.lsp.buf.hover() end, opts)
+			nnoremap("<leader>vws", function() vim.lsp.buf.workspace_symbol() end, opts)
 			nnoremap("<leader>vd", function() vim.diagnostic.open_float() end)
-			nnoremap("[d", function() vim.diagnostic.goto_next() end)
-			nnoremap("]d", function() vim.diagnostic.goto_prev() end)
-			nnoremap("<leader>vca", function() vim.lsp.buf.code_action() end)
+			nnoremap("[d", function() vim.diagnostic.goto_next() end, opts)
+			nnoremap("]d", function() vim.diagnostic.goto_prev() end, opts)
+			nnoremap("<leader>vca", function() vim.lsp.buf.code_action() end, opts)
 			nnoremap("<leader>vco", function() vim.lsp.buf.code_action({
                 filter = function(code_action)
                     if not code_action or not code_action.data then
@@ -97,20 +93,23 @@ local function config(_config)
                     return string.sub(data, #data - 1, #data) == ":0"
                 end,
                 apply = true
-            }) end)
+            }) end, opts)
             -- this is Prime's mapping
 			-- nnoremap("<leader>vrr", function() vim.lsp.buf.references() end)
 			-- nnoremap("gr", function() vim.lsp.buf.references() end)
-            nnoremap("gr", "<cmd>Telescope lsp_references<CR>")
-			nnoremap("<leader>vrn", function() vim.lsp.buf.rename() end)
-			inoremap("<C-h>", function() vim.lsp.buf.signature_help() end)
+            nnoremap("gr", "<cmd>Telescope lsp_references<CR>", opts)
+            nnoremap("gi", "<cmd>Telescope lsp_implementations<CR>", opts)
+			nnoremap("<leader>vrn", function() vim.lsp.buf.rename() end, opts)
+			inoremap("<C-h>", function() vim.lsp.buf.signature_help() end, opts)
 		end,
 	}, _config or {})
 end
 
 nvim_lsp.zls.setup(config())
 
-nvim_lsp.tsserver.setup(config())
+nvim_lsp.tsserver.setup(config({
+        -- capabilities = capabilities,
+}))
 
 nvim_lsp.ccls.setup(config())
 
@@ -121,6 +120,8 @@ nvim_lsp.svelte.setup(config())
 nvim_lsp.solang.setup(config())
 
 nvim_lsp.cssls.setup(config())
+
+nvim_lsp.astro.setup(config())
 
 nvim_lsp.gopls.setup(config({
 	cmd = { "gopls", "serve" },

@@ -1,7 +1,7 @@
 local Remap = require("restacksyj.keymap")
 local nnoremap = Remap.nnoremap
 local vnoremap = Remap.vnoremap
-local inoremap = Remap.inoremap
+-- local inoremap = Remap.inoremap
 local xnoremap = Remap.xnoremap
 local nmap = Remap.nmap
 
@@ -37,3 +37,4 @@ nnoremap("N", "Nzzzv")
 -- when you use J in normal mode it joins the next line adds 2 spaces and keeps the cursor at the 
 -- same positon
 nnoremap("J", "mzJ`z")
+nnoremap("<leader>x", "<cmd>!chmod +x %<CR>", {silent=true})

@@ -42,3 +42,9 @@ vim.opt.colorcolumn = "100"
 
 vim.g.mapleader = " "
 
+
+-- Custom restacksyj vim options as provided by nvim-ufo
+vim.opt.foldcolumn = '1' -- '0' is not bad
+vim.opt.foldlevel = 99 -- Using ufo provider need a large value, feel free to decrease the value
+vim.opt.foldlevelstart = -1
+vim.opt.foldenable = true
