@@ -1,5 +1,0 @@
-pane	default	1	0	:-	1	~/Documents	:/Users/yashjajoo/Documents	1	fish	:/usr/local/bin/fish
-pane	default	2	1	:*	1	yashjajooFb.local	:/Users/yashjajoo/Documents	1	fish	:bash /Users/yashjajoo/.config/local/scripts/tmux-sessionizer
-window	default	1	:fish	0	:-	af3d,130x41,0,0,0	:
-window	default	2	:fish	1	:*	af3e,130x41,0,0,1	:
-state	default	

@@ -9,3 +9,4 @@ solana/
 wireshark/
 .DS_Store
 tmux/plugins/*
+tmux/resurrect

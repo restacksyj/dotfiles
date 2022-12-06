@@ -1,5 +1,0 @@
-pane	defaul	1	1	:*	1	~	:/Users/yashjajoo	1	fish	:/usr/local/bin/fish
-pane	fb-rates	1	1	:*	1	vi ~/D/f/fb-rates	:/Users/yashjajoo/Documents/freightbro/fb-rates	1	nvim	:/usr/local/bin/fish
-window	defaul	1	:fish	1	:*	b03d,132x41,0,0,0	:
-window	fb-rates	1	:nvim	1	:*	b03f,132x41,0,0,2	:
-state	fb-rates	defaul

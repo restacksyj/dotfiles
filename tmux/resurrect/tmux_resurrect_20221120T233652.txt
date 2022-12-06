@@ -1,3 +1,0 @@
-pane	0	1	1	:*	1	~/.config	:/Users/yashjajoo	1	fish	:figterm
-window	0	1	:nvim	1	:*	ad3d,134x40,0,0,0	off
-state	0	

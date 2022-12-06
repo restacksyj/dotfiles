@@ -1,9 +1,0 @@
-pane	admin-backend	1	1	:*	1	nvim . ~/D/f/admin-backend	:/Users/yashjajoo/Documents/freightbro/admin-backend	1	nvim	:/usr/local/bin/fish
-pane	fb-shipper	1	0	:-	1	nvim . ~/D/f/fb-shipper	:/Users/yashjajoo/Documents/freightbro/fb-shipper	1	nvim	:/usr/local/bin/fish
-pane	fb-shipper	2	1	:*	1	~/D/f/fb-shipper	:/Users/yashjajoo/Documents/freightbro/fb-shipper	1	fish	:/usr/local/bin/fish
-pane	projects	1	1	:*	1	nvim index.js ~/D/f/saheb	:/Users/yashjajoo/Documents/freightify/saheb	1	nvim	:/usr/local/bin/fish
-window	admin-backend	1	:nvim	1	:*	d7d8,130x41,0,0,29	:
-window	fb-shipper	1	:nvim	0	:-	57d3,130x41,0,0,14	:
-window	fb-shipper	2	:fish	1	:*	d7d1,130x41,0,0,22	:
-window	projects	1	:nvim	1	:*	57d1,130x41,0,0,31	:
-state	projects	admin-backend

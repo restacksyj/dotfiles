@@ -1,7 +1,0 @@
-pane	rates	1	1	:*	1	nvim ~/D/f/fb-rates	:/Users/yashjajoo	1	fish	:figterm
-pane	rates	2	0	:	1	php artisan serve ~/D/f/fb-shipper	:/Users/yashjajoo/Documents/freightbro/fb-shipper/public	1	php	:/usr/local/bin/fish
-pane	rates	3	0	:-	1	~/D/f/admin-frontend	:/Users/yashjajoo/Documents/freightbro/admin-frontend	1	fish	:/usr/local/bin/fish
-window	rates	1	:fish	1	:*	b042,132x41,0,0,5	:
-window	rates	2	:php	0	:	5850,132x41,0,0,11	:
-window	rates	3	:fish	0	:-	5851,132x41,0,0,12	:
-state	rates	

@@ -1,9 +1,0 @@
-pane	defaul	1	1	:*	1	vi ~	:/Users/yashjajoo	1	nvim	:/usr/local/bin/fish
-pane	fb-rates	1	1	:*	1	~/D/f/fb-rates	:/Users/yashjajoo/Documents/freightbro/fb-rates	1	fish	:/usr/local/bin/fish
-pane	fb-shipper	1	1	:*	1	vi ~/.tmux.conf ~/.tmux	:/Users/yashjajoo/.tmux	1	nvim	:/usr/local/bin/fish
-pane	local	1	1	:*	1	vi tmux-sessionizer  ~/.c/l/scripts	:/Users/yashjajoo/.config/local/scripts	1	nvim	:/usr/local/bin/fish
-window	defaul	1	:nvim	1	:*	c47d,142x46,0,0,0	:
-window	fb-rates	1	:fish	1	:*	e275,142x46,0,0,26	:
-window	fb-shipper	1	:nvim	1	:*	c481,142x46,0,0,4	:
-window	local	1	:nvim	1	:*	e277,142x46,0,0,28	:
-state	local	fb-rates

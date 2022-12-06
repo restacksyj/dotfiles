@@ -1,7 +1,0 @@
-pane	0	1	1	:*	1	~/D/f/a/config	:/Users/yashjajoo	1	fish	:figterm
-pane	fb-config	1	0	:-	1	~/.c/freightbro	:/Users/yashjajoo	1	fish	:figterm
-pane	fb-config	2	1	:*	1	~/.c/n/l/restacksyj	:/Users/yashjajoo	1	fish	:figterm
-window	0	1	:nvim	1	:*	b03d,132x41,0,0,0	off
-window	fb-config	1	:fish	0	:-	b042,132x41,0,0,5	:
-window	fb-config	2	:fish	1	:*	b043,132x41,0,0,6	:
-state	fb-config	0

@@ -1,5 +1,0 @@
-pane	rates	1	0	:-	1	node -r dotenv/confi ~/D/f/fb-rates	:/Users/yashjajoo	1	fish	:figterm
-pane	rates	2	1	:*	1	php artisan serve ~/D/f/fb-shipper	:/Users/yashjajoo/Documents/freightbro/fb-shipper/public	1	php	:/usr/local/bin/fish
-window	rates	1	:fish	0	:-	abe2,64x41,0,0,5	:
-window	rates	2	:php	1	:*	5620,64x41,0,0,11	:
-state	rates	

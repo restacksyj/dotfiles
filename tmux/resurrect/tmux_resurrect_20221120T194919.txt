@@ -1,5 +1,0 @@
-pane	configs	1	0	:-	1	~/.c/nvim	:/Users/yashjajoo	1	fish	:figterm
-pane	configs	2	1	:*	1	~/.config	:/Users/yashjajoo	1	fish	:figterm
-window	configs	1	:neovim	0	:-	b03d,132x41,0,0,0	off
-window	configs	2	:fish	1	:*	b03e,132x41,0,0,1	:
-state	configs	
