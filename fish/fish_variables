@@ -71,9 +71,11 @@ SETUVAR _tide_prompt_2430:\x1d
 SETUVAR _tide_prompt_24398:\x1d
 SETUVAR _tide_prompt_24450:\x1d
 SETUVAR _tide_prompt_25340:\x1d
+SETUVAR _tide_prompt_2547:\x1d
 SETUVAR _tide_prompt_25966:\x1d
 SETUVAR _tide_prompt_27097:\x1d
 SETUVAR _tide_prompt_27157:\x1d
+SETUVAR _tide_prompt_2778:\x1d
 SETUVAR _tide_prompt_2881:\x1d
 SETUVAR _tide_prompt_28847:\x1d
 SETUVAR _tide_prompt_29530:\x1d
@@ -99,6 +101,7 @@ SETUVAR _tide_prompt_3540:\x1d
 SETUVAR _tide_prompt_35513:\x1d
 SETUVAR _tide_prompt_35519:\x1d
 SETUVAR _tide_prompt_3614:\x1d
+SETUVAR _tide_prompt_3650:\x1d
 SETUVAR _tide_prompt_3665:\x1d
 SETUVAR _tide_prompt_3671:\x1d
 SETUVAR _tide_prompt_3751:\x1d
@@ -124,6 +127,7 @@ SETUVAR _tide_prompt_42799:\x1d
 SETUVAR _tide_prompt_4335:\x1d
 SETUVAR _tide_prompt_4364:\x1d
 SETUVAR _tide_prompt_43740:\x1d
+SETUVAR _tide_prompt_44129:\x1d
 SETUVAR _tide_prompt_4459:\x1d
 SETUVAR _tide_prompt_4485:\x1d
 SETUVAR _tide_prompt_45246:\x1d
@@ -200,6 +204,7 @@ SETUVAR _tide_prompt_7153:\x1d
 SETUVAR _tide_prompt_71889:\x1d
 SETUVAR _tide_prompt_72251:\x1d
 SETUVAR _tide_prompt_72927:\x1d
+SETUVAR _tide_prompt_73547:\x1d
 SETUVAR _tide_prompt_7443:\x1d
 SETUVAR _tide_prompt_7455:\x1d
 SETUVAR _tide_prompt_7461:\x1d
@@ -241,7 +246,6 @@ SETUVAR _tide_prompt_8699:\x1d
 SETUVAR _tide_prompt_87774:\x1d
 SETUVAR _tide_prompt_8912:\x1d
 SETUVAR _tide_prompt_9023:\x1d
-SETUVAR _tide_prompt_90610:\x1d
 SETUVAR _tide_prompt_91238:\x1d
 SETUVAR _tide_prompt_9159:\x1d
 SETUVAR _tide_prompt_91780:\x1d
@@ -260,7 +264,6 @@ SETUVAR _tide_prompt_97242:\x1d
 SETUVAR _tide_prompt_97312:\x1d
 SETUVAR _tide_prompt_97397:\x1d
 SETUVAR _tide_prompt_97586:\x1d
-SETUVAR _tide_prompt_97604:\x1d
 SETUVAR _tide_prompt_97714:\x1d
 SETUVAR _tide_prompt_97832:\x1d
 SETUVAR _tide_prompt_97904:\x1d
