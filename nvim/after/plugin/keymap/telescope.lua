@@ -7,7 +7,9 @@ nnoremap("<leader>ps", function()
 end)
 
 nnoremap("<C-p>", function()
-    require('telescope.builtin').find_files()
+    require('telescope.builtin').find_files({
+            find_command = { 'rg', '--files', '--iglob', '!.git', '--hidden' },
+        })
 end)
 
 nnoremap("<Leader>fb", function()

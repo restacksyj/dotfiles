@@ -1,7 +1,7 @@
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-eval /Users/yashjajoo/opt/anaconda3/bin/conda "shell.fish" "hook" $argv | source
+# eval /Users/yashjajoo/opt/anaconda3/bin/conda "shell.fish" "hook" $argv | source
 # <<< conda initialize <<<
 set fish_greeting
 

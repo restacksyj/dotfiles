@@ -11,9 +11,10 @@ SETUVAR Z_EXCLUDE:\x5e/Users/yashjajoo\x24
 SETUVAR __fish_initialized:3400
 SETUVAR _fisher_edc_2F_bass_files:/Users/yashjajoo/\x2econfig/fish/functions/__bass\x2epy\x1e/Users/yashjajoo/\x2econfig/fish/functions/bass\x2efish
 SETUVAR _fisher_jethrokuan_2F_z_files:/Users/yashjajoo/\x2econfig/fish/functions/__z\x2efish\x1e/Users/yashjajoo/\x2econfig/fish/functions/__z_add\x2efish\x1e/Users/yashjajoo/\x2econfig/fish/functions/__z_clean\x2efish\x1e/Users/yashjajoo/\x2econfig/fish/functions/__z_complete\x2efish\x1e/Users/yashjajoo/\x2econfig/fish/conf\x2ed/z\x2efish
-SETUVAR _fisher_jorgebucaran_2F_fisher_files:/Users/yashjajoo/\x2econfig/fish/functions/fisher\x2efish\x1e/Users/yashjajoo/\x2econfig/fish/completions/fisher\x2efish
+SETUVAR _fisher_jorgebucaran_2F_fisher_files:\x7e/\x2econfig/fish/functions/fisher\x2efish\x1e\x7e/\x2econfig/fish/completions/fisher\x2efish
 SETUVAR _fisher_jorgebucaran_2F_nvm_2E_fish_files:/Users/yashjajoo/\x2econfig/fish/functions/_nvm_index_update\x2efish\x1e/Users/yashjajoo/\x2econfig/fish/functions/_nvm_list\x2efish\x1e/Users/yashjajoo/\x2econfig/fish/functions/_nvm_version_activate\x2efish\x1e/Users/yashjajoo/\x2econfig/fish/functions/_nvm_version_deactivate\x2efish\x1e/Users/yashjajoo/\x2econfig/fish/functions/nvm\x2efish\x1e/Users/yashjajoo/\x2econfig/fish/conf\x2ed/nvm\x2efish\x1e/Users/yashjajoo/\x2econfig/fish/completions/nvm\x2efish
-SETUVAR _fisher_plugins:jorgebucaran/fisher\x1esimnalamburt/shellder\x1ejethrokuan/z\x1ejorgebucaran/nvm\x2efish\x1eedc/bass
+SETUVAR _fisher_plugins:jorgebucaran/fisher\x1ejethrokuan/z\x1ejorgebucaran/nvm\x2efish\x1eedc/bass
+SETUVAR _fisher_upgraded_to_4_4:\x1d
 SETUVAR _tide_left_items:pwd\x1egit\x1enewline\x1echaracter
 SETUVAR _tide_prompt_10327:\x1d
 SETUVAR _tide_prompt_10369:\x1d
@@ -71,11 +72,9 @@ SETUVAR _tide_prompt_2430:\x1d
 SETUVAR _tide_prompt_24398:\x1d
 SETUVAR _tide_prompt_24450:\x1d
 SETUVAR _tide_prompt_25340:\x1d
-SETUVAR _tide_prompt_2547:\x1d
 SETUVAR _tide_prompt_25966:\x1d
 SETUVAR _tide_prompt_27097:\x1d
 SETUVAR _tide_prompt_27157:\x1d
-SETUVAR _tide_prompt_2778:\x1d
 SETUVAR _tide_prompt_2881:\x1d
 SETUVAR _tide_prompt_28847:\x1d
 SETUVAR _tide_prompt_29530:\x1d
@@ -101,7 +100,6 @@ SETUVAR _tide_prompt_3540:\x1d
 SETUVAR _tide_prompt_35513:\x1d
 SETUVAR _tide_prompt_35519:\x1d
 SETUVAR _tide_prompt_3614:\x1d
-SETUVAR _tide_prompt_3650:\x1d
 SETUVAR _tide_prompt_3665:\x1d
 SETUVAR _tide_prompt_3671:\x1d
 SETUVAR _tide_prompt_3751:\x1d
@@ -306,7 +304,6 @@ SETUVAR fish_pager_color_description:B3A06D\x1eyellow\x1e\x2di
 SETUVAR fish_pager_color_prefix:cyan\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
 SETUVAR fish_pager_color_selected_background:\x2dr
-SETUVAR fish_user_paths:/Users/yashjajoo/\x2eemacs\x2ed/bin\x1e/Users/yashjajoo/\x2econfig/local/scripts\x1e/Users/yashjajoo/\x2epoetry/bin\x1e/usr/local/opt/php\x407\x2e0/sbin\x1e/usr/local/opt/php\x407\x2e0/bin\x1e/Users/yashjajoo/\x2ecargo/bin\x1e/usr/local/opt/php\x407\x2e1/sbin\x1e/usr/local/opt/php\x407\x2e1/bin\x1e/usr/local/opt/php\x407\x2e3/sbin\x1e/usr/local/opt/php\x407\x2e3/bin\x1e/usr/local/opt/php\x407\x2e2/sbin\x1e/usr/local/opt/php\x407\x2e2/bin\x1e/Users/yashjajoo/\x2efig/bin\x1e/Users/yashjajoo/Documents/development/flutter/bin\x1e/Users/yashjajoo/\x2elocal/bin
 SETUVAR nvm_data:/Users/yashjajoo/\x2elocal/share/nvm
 SETUVAR nvm_default_version:v12
 SETUVAR nvm_mirror:https\x3a//nodejs\x2eorg/dist
