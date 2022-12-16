@@ -15,27 +15,27 @@ return require("packer").startup(function(use)
     })
 
     -- All the things
-    use("neovim/nvim-lspconfig")
-    use("hrsh7th/cmp-nvim-lsp")
-    use("hrsh7th/cmp-buffer")
-    use("hrsh7th/nvim-cmp")
-    use("tzachar/cmp-tabnine", { run = "./install.sh" })
-    use("onsails/lspkind-nvim")
-    use("nvim-lua/lsp_extensions.nvim")
-    use("glepnir/lspsaga.nvim")
-    use("simrat39/symbols-outline.nvim")
-    use("L3MON4D3/LuaSnip")
-    use("saadparwaiz1/cmp_luasnip")
+    -- use("neovim/nvim-lspconfig")
+    -- use("hrsh7th/cmp-nvim-lsp")
+    -- use("hrsh7th/cmp-buffer")
+    -- use("hrsh7th/nvim-cmp")
+    -- use("tzachar/cmp-tabnine", { run = "./install.sh" })
+    -- use("onsails/lspkind-nvim")
+    -- use("nvim-lua/lsp_extensions.nvim")
+    -- use("glepnir/lspsaga.nvim")
+    -- use("simrat39/symbols-outline.nvim")
+    -- use("L3MON4D3/LuaSnip")
+    -- use("saadparwaiz1/cmp_luasnip")
 
     -- Primeagen doesn"t create lodash
-    use("ThePrimeagen/refactoring.nvim")
-    use("ThePrimeagen/git-worktree.nvim")
+    -- use("ThePrimeagen/refactoring.nvim")
+    -- use("ThePrimeagen/git-worktree.nvim")
     use("ThePrimeagen/harpoon")
 
     use("mbbill/undotree")
 
     -- Colorscheme section
-    use("gruvbox-community/gruvbox")
+    -- use("gruvbox-community/gruvbox")
     use("folke/tokyonight.nvim")
     use({"catppuccin/nvim", as = "catppuccin" })
     use({ 'rose-pine/neovim', as = 'rose-pine' })
@@ -43,13 +43,14 @@ return require("packer").startup(function(use)
     use("nvim-treesitter/nvim-treesitter", {
         run = ":TSUpdate"
     })
-
-    use("nvim-treesitter/playground")
+    --
+    -- use("nvim-treesitter/playground")
     use("romgrk/nvim-treesitter-context")
+    use ("jose-elias-alvarez/null-ls.nvim")
 
-    use("mfussenegger/nvim-dap")
-    use("rcarriga/nvim-dap-ui")
-    use("theHamsta/nvim-dap-virtual-text")
+    -- use("mfussenegger/nvim-dap")
+    -- use("rcarriga/nvim-dap-ui")
+    -- use("theHamsta/nvim-dap-virtual-text")
 
     -- restacksyj starts here (different from theprimeagen)
     use {
@@ -61,16 +62,38 @@ return require("packer").startup(function(use)
     }
     use 'ray-x/go.nvim'
     -- this is used for folding lines
-    use {'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async'}
+    -- use {'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async'}
 
-    use{'jose-elias-alvarez/null-ls.nvim'}
-    use{'MunifTanjim/eslint.nvim'}
     use {
     'kosayoda/nvim-lightbulb',
     requires = 'antoinemadec/FixCursorHold.nvim',
     }
 
+    use {
+        'VonHeikemen/lsp-zero.nvim',
+        requires = {
+            -- LSP Support
+            {'neovim/nvim-lspconfig'},
+            {'williamboman/mason.nvim'},
+            {'williamboman/mason-lspconfig.nvim'},
 
+            -- Autocompletion
+            {'hrsh7th/nvim-cmp'},
+            {'hrsh7th/cmp-buffer'},
+            {'hrsh7th/cmp-path'},
+            {'saadparwaiz1/cmp_luasnip'},
+            {'hrsh7th/cmp-nvim-lsp'},
+            {'hrsh7th/cmp-nvim-lua'},
+
+            -- Snippets
+            {'L3MON4D3/LuaSnip'},
+            {'rafamadriz/friendly-snippets'},
+        }
+
+}
+
+     use("tzachar/cmp-tabnine" )
+     use("onsails/lspkind-nvim")
 	--[[
     --
 	-- Lazy loading:
