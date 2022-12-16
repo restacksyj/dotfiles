@@ -1,99 +1,99 @@
 return require("packer").startup(function(use)
-    use("wbthomason/packer.nvim")
+	use("wbthomason/packer.nvim")
 
-    -- Simple plugins can be specified as strings
-    -- use("TimUntersberger/neogit")
-    use("tpope/vim-fugitive")
+	-- Simple plugins can be specified as strings
+	-- use("TimUntersberger/neogit")
+	use("tpope/vim-fugitive")
 
-    -- TJ created lodash of neovim
-    use("nvim-lua/plenary.nvim")
-    use("nvim-lua/popup.nvim")
-    use("nvim-telescope/telescope.nvim")
+	-- TJ created lodash of neovim
+	use("nvim-lua/plenary.nvim")
+	use("nvim-lua/popup.nvim")
+	use("nvim-telescope/telescope.nvim")
 
-    use({
-        'nvim-lualine/lualine.nvim',
-    })
+	use({
+		"nvim-lualine/lualine.nvim",
+	})
 
-    -- All the things
-    -- use("neovim/nvim-lspconfig")
-    -- use("hrsh7th/cmp-nvim-lsp")
-    -- use("hrsh7th/cmp-buffer")
-    -- use("hrsh7th/nvim-cmp")
-    -- use("tzachar/cmp-tabnine", { run = "./install.sh" })
-    -- use("onsails/lspkind-nvim")
-    -- use("nvim-lua/lsp_extensions.nvim")
-    -- use("glepnir/lspsaga.nvim")
-    -- use("simrat39/symbols-outline.nvim")
-    -- use("L3MON4D3/LuaSnip")
-    -- use("saadparwaiz1/cmp_luasnip")
+	-- All the things
+	-- use("neovim/nvim-lspconfig")
+	-- use("hrsh7th/cmp-nvim-lsp")
+	-- use("hrsh7th/cmp-buffer")
+	-- use("hrsh7th/nvim-cmp")
+	-- use("tzachar/cmp-tabnine", { run = "./install.sh" })
+	-- use("onsails/lspkind-nvim")
+	-- use("nvim-lua/lsp_extensions.nvim")
+	-- use("glepnir/lspsaga.nvim")
+	-- use("simrat39/symbols-outline.nvim")
+	-- use("L3MON4D3/LuaSnip")
+	-- use("saadparwaiz1/cmp_luasnip")
 
-    -- Primeagen doesn"t create lodash
-    -- use("ThePrimeagen/refactoring.nvim")
-    -- use("ThePrimeagen/git-worktree.nvim")
-    use("ThePrimeagen/harpoon")
+	-- Primeagen doesn"t create lodash
+	-- use("ThePrimeagen/refactoring.nvim")
+	-- use("ThePrimeagen/git-worktree.nvim")
+	use("ThePrimeagen/harpoon")
 
-    use("mbbill/undotree")
+	use("mbbill/undotree")
 
-    -- Colorscheme section
-    -- use("gruvbox-community/gruvbox")
-    use("folke/tokyonight.nvim")
-    use({"catppuccin/nvim", as = "catppuccin" })
-    use({ 'rose-pine/neovim', as = 'rose-pine' })
+	-- Colorscheme section
+	-- use("gruvbox-community/gruvbox")
+	use("folke/tokyonight.nvim")
+	use({ "catppuccin/nvim", as = "catppuccin" })
+	use({ "rose-pine/neovim", as = "rose-pine" })
 
-    use("nvim-treesitter/nvim-treesitter", {
-        run = ":TSUpdate"
-    })
-    --
-    -- use("nvim-treesitter/playground")
-    use("romgrk/nvim-treesitter-context")
-    use ("jose-elias-alvarez/null-ls.nvim")
+	use("nvim-treesitter/nvim-treesitter", {
+		run = ":TSUpdate",
+	})
+	--
+	-- use("nvim-treesitter/playground")
+	use("romgrk/nvim-treesitter-context")
+	use("jose-elias-alvarez/null-ls.nvim")
 
-    -- use("mfussenegger/nvim-dap")
-    -- use("rcarriga/nvim-dap-ui")
-    -- use("theHamsta/nvim-dap-virtual-text")
+	-- use("mfussenegger/nvim-dap")
+	-- use("rcarriga/nvim-dap-ui")
+	-- use("theHamsta/nvim-dap-virtual-text")
 
-    -- restacksyj starts here (different from theprimeagen)
-    use {
-        'numToStr/Comment.nvim',
-    }
-    use {
-        'kylechui/nvim-surround',
-        tag = "*"
-    }
-    use 'ray-x/go.nvim'
-    -- this is used for folding lines
-    -- use {'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async'}
+	-- restacksyj starts here (different from theprimeagen)
+	use({
+		"numToStr/Comment.nvim",
+	})
+	use({
+		"kylechui/nvim-surround",
+		tag = "*",
+	})
+	use("ray-x/go.nvim")
+	-- this is used for folding lines
+	-- use {'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async'}
 
-    use {
-    'kosayoda/nvim-lightbulb',
-    requires = 'antoinemadec/FixCursorHold.nvim',
-    }
+	use({
+		"kosayoda/nvim-lightbulb",
+		requires = "antoinemadec/FixCursorHold.nvim",
+	})
 
-    use {
-        'VonHeikemen/lsp-zero.nvim',
-        requires = {
-            -- LSP Support
-            {'neovim/nvim-lspconfig'},
-            {'williamboman/mason.nvim'},
-            {'williamboman/mason-lspconfig.nvim'},
+	use({
+		"VonHeikemen/lsp-zero.nvim",
+		requires = {
+			-- LSP Support
+			{ "neovim/nvim-lspconfig" },
+			{ "williamboman/mason.nvim" },
+			{ "williamboman/mason-lspconfig.nvim" },
 
-            -- Autocompletion
-            {'hrsh7th/nvim-cmp'},
-            {'hrsh7th/cmp-buffer'},
-            {'hrsh7th/cmp-path'},
-            {'saadparwaiz1/cmp_luasnip'},
-            {'hrsh7th/cmp-nvim-lsp'},
-            {'hrsh7th/cmp-nvim-lua'},
+			-- Autocompletion
+			{ "hrsh7th/nvim-cmp" },
+			{ "hrsh7th/cmp-buffer" },
+			{ "hrsh7th/cmp-path" },
+			{ "saadparwaiz1/cmp_luasnip" },
+			{ "hrsh7th/cmp-nvim-lsp" },
+			{ "hrsh7th/cmp-nvim-lua" },
 
-            -- Snippets
-            {'L3MON4D3/LuaSnip'},
-            {'rafamadriz/friendly-snippets'},
-        }
+			-- Snippets
+			{ "L3MON4D3/LuaSnip" },
+			{ "rafamadriz/friendly-snippets" },
+		},
+	})
 
-}
-
-     use("tzachar/cmp-tabnine" )
-     use("onsails/lspkind-nvim")
+	use("tzachar/cmp-tabnine")
+	use("onsails/lspkind-nvim")
+	use("folke/zen-mode.nvim")
 	--[[
     --
 	-- Lazy loading:
@@ -109,7 +109,8 @@ return require("packer").startup(function(use)
 	'w0rp/ale',
 	ft = {'sh', 'zsh', 'bash', 'c', 'cpp', 'cmake', 'html', 'markdown', 'racket', 'vim', 'tex'},
 	cmd = 'ALEEnable',
-	config = 'vim.cmd[[ALEEnable]]--[['
+	config = 'vim.cmd[[ALEEnable]]
+	--[['
 	}
 
 	-- Plugins can have dependencies on other plugins
@@ -161,4 +162,3 @@ return require("packer").startup(function(use)
 	end)
 	--]]
 end)
-

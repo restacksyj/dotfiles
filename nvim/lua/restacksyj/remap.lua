@@ -13,17 +13,17 @@ vnoremap("J", ":m '>+1<CR>gv=gv")
 vnoremap("K", ":m '<-2<CR>gv=gv")
 
 -- greatest remap ever
-xnoremap("<leader>p", "\"_dP")
+xnoremap("<leader>p", '"_dP')
 -- this works for me above doesn't
-vnoremap("<leader>p", "\"_dP")
+vnoremap("<leader>p", '"_dP')
 
 -- next greatest remap ever : asbjornHaland
-nnoremap("<leader>y", "\"+y")
-vnoremap("<leader>y", "\"+y")
-nmap("<leader>Y", "\"+Y")
+nnoremap("<leader>y", '"+y')
+vnoremap("<leader>y", '"+y')
+nmap("<leader>Y", '"+Y')
 
-nnoremap("<leader>d", "\"_d")
-vnoremap("<leader>d", "\"_d")
+nnoremap("<leader>d", '"_d')
+vnoremap("<leader>d", '"_d')
 
 nnoremap("H", "^")
 nnoremap("L", "$")
@@ -39,7 +39,6 @@ nnoremap("N", "Nzzzv")
 nnoremap("J", "mzJ`z")
 nnoremap("<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 
-
 nnoremap("<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
 nnoremap("<C-k>", "<cmd>cnext<CR>zz")
 nnoremap("<C-j>", "<cmd>cprev<CR>zz")
@@ -50,3 +49,4 @@ inoremap("<C-c>", "<Esc>")
 
 -- nnoremap("<leader>f","mF:%!eslint_d --stdin --fix-to-stdout --stdin-filename %<CR>`F")
 nnoremap("<leader>ff", ":lua vim.lsp.buf.format(nil, 1000)<CR>")
+vim.keymap.set("n", "<leader>s", ":%s/\\<<C-r><C-w>\\>/<C-r><C-w>/gI<Left><Left><Left>")
