@@ -5,6 +5,7 @@ local luasnip = require("luasnip")
 lsp.preset("recommended")
 
 local cmp = require("cmp")
+-- this does start adding what is recommended after the cursor
 local cmp_select = { behavior = cmp.SelectBehavior.Select }
 local source_mapping = {
 	buffer = "[Buffer]",
@@ -24,11 +25,14 @@ tabnine:setup({
 
 local capabilities = require("cmp_nvim_lsp").default_capabilities(vim.lsp.protocol.make_client_capabilities())
 
-local cmp_mappings = lsp.defaults.cmp_mappings({
-	["<C-p>"] = cmp.mapping.select_prev_item(cmp_select),
-	["<C-n>"] = cmp.mapping.select_next_item(cmp_select),
-	["<C-y>"] = cmp.mapping.confirm({ select = true }),
-	["<C-Space>"] = cmp.mapping.complete(),
+lsp.setup_nvim_cmp({
+	mapping = lsp.defaults.cmp_mappings({
+		-- add behavior: cmp_select if you have to disable the next automatically selected
+		["<C-p>"] = cmp.mapping.select_prev_item(),
+		["<C-n>"] = cmp.mapping.select_next_item(),
+		["<C-d>"] = cmp.mapping.scroll_docs(4),
+		["<C-u>"] = cmp.mapping.scroll_docs(-4),
+	}),
 })
 
 local lsp_formatting = function(bufnr)
@@ -43,30 +47,6 @@ end
 
 lsp.set_preferences({
 	sign_icons = {},
-})
-
-lsp.setup_nvim_cmp({
-	mappings = cmp_mappings,
-	--    sources = {
-	--        { name = "lsp" },
-	-- 	{ name = "cmp_tabnine" },
-	-- 	{ name = "luasnip" },
-	-- 	{ name = "buffer" },
-	-- },
-	--    formatting = {
-	-- 	format = function(entry, vim_item)
-	-- 		vim_item.kind = lspkind.presets.default[vim_item.kind]
-	-- 		local menu = source_mapping[entry.source.name]
-	-- 		if entry.source.name == "cmp_tabnine" then
-	-- 			if entry.completion_item.data ~= nil and entry.completion_item.data.detail ~= nil then
-	-- 				menu = entry.completion_item.data.detail .. " " .. menu
-	-- 			end
-	-- 			vim_item.kind = ""
-	-- 		end
-	-- 		vim_item.menu = menu
-	-- 		return vim_item
-	-- 	end,
-	-- },
 })
 
 lsp.on_attach(function(client, bufnr)
@@ -135,27 +115,6 @@ lsp.configure("sumneko_lua", {
 		},
 	},
 })
-
--- lsp.configure('gopls', {
---     settings = {
--- 		gopls = {
--- 			analyses = {
--- 				unusedparams = true,
--- 			},
--- 			staticcheck = true,
--- 		},
--- 	},
--- })
-
--- lsp.configure('rust-analyzer', {
---      settings = {
---         rust = {
---             unstable_features = true,
---             build_on_save = false,
---             all_features = true,
---         },
---     }
--- })
 
 -- lsp.setup({capabilities = capabilities})
 lsp.setup()
