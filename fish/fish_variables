@@ -9,7 +9,7 @@ SETUVAR Z_DATA:/Users/yashjajoo/\x2elocal/share/z/data
 SETUVAR Z_DATA_DIR:/Users/yashjajoo/\x2elocal/share/z
 SETUVAR Z_EXCLUDE:\x5e/Users/yashjajoo\x24
 SETUVAR __fish_initialized:3400
-SETUVAR _fisher_edc_2F_bass_files:/Users/yashjajoo/\x2econfig/fish/functions/__bass\x2epy\x1e/Users/yashjajoo/\x2econfig/fish/functions/bass\x2efish
+SETUVAR _fisher_edc_2F_bass_files:\x7e/\x2econfig/fish/functions/__bass\x2epy\x1e\x7e/\x2econfig/fish/functions/bass\x2efish
 SETUVAR _fisher_jethrokuan_2F_z_files:/Users/yashjajoo/\x2econfig/fish/functions/__z\x2efish\x1e/Users/yashjajoo/\x2econfig/fish/functions/__z_add\x2efish\x1e/Users/yashjajoo/\x2econfig/fish/functions/__z_clean\x2efish\x1e/Users/yashjajoo/\x2econfig/fish/functions/__z_complete\x2efish\x1e/Users/yashjajoo/\x2econfig/fish/conf\x2ed/z\x2efish
 SETUVAR _fisher_jorgebucaran_2F_fisher_files:\x7e/\x2econfig/fish/functions/fisher\x2efish\x1e\x7e/\x2econfig/fish/completions/fisher\x2efish
 SETUVAR _fisher_jorgebucaran_2F_nvm_2E_fish_files:/Users/yashjajoo/\x2econfig/fish/functions/_nvm_index_update\x2efish\x1e/Users/yashjajoo/\x2econfig/fish/functions/_nvm_list\x2efish\x1e/Users/yashjajoo/\x2econfig/fish/functions/_nvm_version_activate\x2efish\x1e/Users/yashjajoo/\x2econfig/fish/functions/_nvm_version_deactivate\x2efish\x1e/Users/yashjajoo/\x2econfig/fish/functions/nvm\x2efish\x1e/Users/yashjajoo/\x2econfig/fish/conf\x2ed/nvm\x2efish\x1e/Users/yashjajoo/\x2econfig/fish/completions/nvm\x2efish
@@ -305,7 +305,7 @@ SETUVAR fish_pager_color_prefix:cyan\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
 SETUVAR fish_pager_color_selected_background:\x2dr
 SETUVAR nvm_data:/Users/yashjajoo/\x2elocal/share/nvm
-SETUVAR nvm_default_version:v12
+SETUVAR nvm_default_version:v16\x2e19\x2e0
 SETUVAR nvm_mirror:https\x3a//nodejs\x2eorg/dist
 SETUVAR tide_character_color:5FD700
 SETUVAR tide_character_color_failure:FF0000

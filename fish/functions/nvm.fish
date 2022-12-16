@@ -228,3 +228,21 @@ function _nvm_node_info
         console.log(process.execPath.replace(require('os').homedir(), '~'))
     "
 end
+
+# function _nvm
+#     bass source /Users/yashjajoo/.nvm/nvm.sh --no-use ';' nvm $argv
+# end
+#
+# function nvm    
+#     if test -e $NVM_CURRENT
+#         # echo Setting up nvm..
+#
+#         _nvm use default --silent
+#
+#         set -x -g NVM_CURRENT (_nvm current)
+#
+#         # printf "Using Node %s\n" $NVM_CURRENT
+#     end
+#
+#     _nvm $argv
+# end

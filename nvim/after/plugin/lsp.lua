@@ -32,6 +32,8 @@ lsp.setup_nvim_cmp({
 		["<C-n>"] = cmp.mapping.select_next_item(),
 		["<C-d>"] = cmp.mapping.scroll_docs(4),
 		["<C-u>"] = cmp.mapping.scroll_docs(-4),
+		["<Tab>"] = nil,
+		["<S-Tab>"] = nil,
 	}),
 })
 
@@ -46,14 +48,22 @@ local lsp_formatting = function(bufnr)
 end
 
 lsp.set_preferences({
-	sign_icons = {},
+	suggest_lsp_servers = false,
+	sign_icons = {
+		error = "E",
+		warn = "W",
+		hint = "H",
+		info = "I",
+	},
 })
+
+local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
 
 lsp.on_attach(function(client, bufnr)
 	if client.supports_method("textDocument/formatting") then
-		-- vim.api.nvim_clear_autocmds({ group = augroup, buffer = bufnr })
+		vim.api.nvim_clear_autocmds({ group = augroup, buffer = bufnr })
 		vim.api.nvim_create_autocmd("BufWritePre", {
-			-- group = augroup,
+			group = augroup,
 			buffer = bufnr,
 			callback = function()
 				lsp_formatting(bufnr)
