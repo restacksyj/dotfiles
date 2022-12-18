@@ -1,33 +1,81 @@
-local nnoremap = require("restacksyj.keymap").nnoremap
+local actions = require("telescope.actions")
+local builtin = require("telescope.builtin")
+local function telescope_buffer_dir()
+	return vim.fn.expand("%:p:h")
+end
 
-nnoremap("<C-p>", ":Telescope")
+require("telescope").setup({
+	defaults = {
+		file_sorter = require("telescope.sorters").get_fzy_sorter,
+		prompt_prefix = " >",
+		color_devicons = true,
+		file_previewer = require("telescope.previewers").vim_buffer_cat.new,
+		grep_previewer = require("telescope.previewers").vim_buffer_vimgrep.new,
+		qflist_previewer = require("telescope.previewers").vim_buffer_qflist.new,
 
-nnoremap("<leader>ps", function()
-    require('telescope.builtin').grep_string({ search = vim.fn.input("Grep For > ")})
+		mappings = {
+			i = {
+				["<C-x>"] = false,
+				["<C-q>"] = actions.send_to_qflist,
+				["<CR>"] = actions.select_default,
+			},
+			n = {
+				["q"] = actions.close,
+				["cd"] = function(prompt_bufnr)
+					local selection = require("telescope.actions.state").get_selected_entry()
+					local dir = vim.fn.fnamemodify(selection.path, ":p:h")
+					require("telescope.actions").close(prompt_bufnr)
+					vim.cmd(string.format("cd %s", dir))
+				end,
+			},
+		},
+	},
+	extensions = {
+		file_browser = {
+			theme = "dropdown",
+			previewer = false,
+		},
+	},
+})
+
+require("telescope").load_extension("file_browser")
+
+vim.keymap.set("n", "<C-p>", builtin.find_files, {})
+vim.keymap.set("n", "<leader>vrc", function()
+	builtin.find_files({
+		prompt_title = "< Dotfiles >",
+		cwd = "~/.config",
+		hidden = true,
+	})
+end, {})
+
+vim.keymap.set("n", "<leader>fb", function()
+	builtin.find_files({
+		prompt_title = "< Freightbro >",
+		cwd = "/Users/yashjajoo/Documents/freightbro",
+		hidden = true,
+		file_ignore_patterns = { "node_modules/*", "vendor" },
+	})
+end, {})
+
+vim.keymap.set("n", "<leader>ps", function()
+	builtin.grep_string({ search = vim.fn.input("Grep > ") })
 end)
-
-nnoremap("<C-p>", function()
-    require('telescope.builtin').find_files({
-            -- find_command = { 'rg', '--files', '--iglob', '!.git', '--hidden' },
-        })
+vim.keymap.set("n", "<leader>pw", function()
+	builtin.grep_string({ search = vim.fn.expand("<cword>") })
 end)
+vim.keymap.set("n", "<leader>gc", builtin.git_branches, {})
+vim.keymap.set("n", "<leader>dl", "<cmd>Telescope diagnostics<CR>", {})
 
-nnoremap("<Leader>fb", function()
-    require('restacksyj.telescope').search_fbfiles()
-end)
-
-nnoremap("<leader>pw", function()
-    require('telescope.builtin').grep_string { search = vim.fn.expand("<cword>") }
-end)
-
-nnoremap("<leader>pb", function()
-    require('telescope.builtin').buffers()
-end)
-
-nnoremap("<leader>vrc", function()
-    require('restacksyj.telescope').search_dotfiles()
-end)
-
-nnoremap("<leader>gc", function()
-    require('restacksyj.telescope').git_branches()
-end)
+vim.keymap.set("n", "<leader>fh", function()
+	require("telescope").extensions.file_browser.file_browser({
+		path = "%:p:h",
+		cwd = telescope_buffer_dir(),
+		respect_gitignore = false,
+		hidden = true,
+		grouped = true,
+		previewer = false,
+		initial_mode = "normal",
+		layout_config = { height = 40 },
+	})
+end, {})
