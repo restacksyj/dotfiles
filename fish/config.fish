@@ -8,6 +8,8 @@ set fish_greeting
 # alias vi="nvim ."
 # alias oldvim="\vim"
 
+alias cl="clear"
+
 function vi
     if count $argv > /dev/null
         nvim $argv
