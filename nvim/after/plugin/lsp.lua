@@ -142,7 +142,18 @@ null_ls.setup({
 	sources = {
 		null_ls.builtins.formatting.stylua,
 		null_ls.builtins.code_actions.eslint_d,
-		null_ls.builtins.diagnostics.eslint_d,
+		null_ls.builtins.diagnostics.eslint_d.with({
+			condition = function(utils)
+				return utils.root_has_file({
+					".eslintrc",
+					".eslintrc.js",
+					".eslintrc.cjs",
+					".eslintrc.yaml",
+					".eslintrc.yml",
+					".eslintrc.json",
+				}) -- and so on
+			end,
+		}),
 		null_ls.builtins.formatting.eslint_d.with({
 			-- args = { "--stdin", "--fix-to-stdout", "--stdin-filename", "%filepath" },
 		}),
