@@ -49,3 +49,5 @@ vim.opt.foldlevel = 99 -- Using ufo provider need a large value, feel free to de
 vim.opt.foldlevelstart = -1
 vim.opt.foldenable = true
 vim.opt.formatoptions:remove({ "c", "r", "o" })
+
+vim.opt.fixeol = false

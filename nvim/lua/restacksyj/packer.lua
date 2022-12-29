@@ -30,9 +30,9 @@ return require("packer").startup(function(use)
 	use("romgrk/nvim-treesitter-context")
 	use("jose-elias-alvarez/null-ls.nvim")
 
-	-- use("mfussenegger/nvim-dap")
-	-- use("rcarriga/nvim-dap-ui")
-	-- use("theHamsta/nvim-dap-virtual-text")
+	use("mfussenegger/nvim-dap")
+	use("rcarriga/nvim-dap-ui")
+	use("theHamsta/nvim-dap-virtual-text")
 
 	-- restacksyj starts here (different from theprimeagen)
 	use({
@@ -82,4 +82,17 @@ return require("packer").startup(function(use)
 	use({ "nvim-telescope/telescope-file-browser.nvim" })
 	use("nvim-tree/nvim-web-devicons")
 	use({ "akinsho/flutter-tools.nvim", requires = "nvim-lua/plenary.nvim" })
+	-- trying out these for text objects line and entire
+	use("kana/vim-textobj-user")
+	use("kana/vim-textobj-line")
+	use("kana/vim-textobj-entire")
+	use({
+		"phaazon/hop.nvim",
+		branch = "v2", -- optional but strongly recommended
+		config = function()
+			-- you can configure Hop the way you like here; see :h hop-config
+			require("hop").setup({ keys = "etovxqpdygfblzhckisuran" })
+		end,
+	})
+	use("rebelot/kanagawa.nvim")
 end)

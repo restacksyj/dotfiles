@@ -32,6 +32,7 @@ lsp.setup_nvim_cmp({
 		["<C-n>"] = cmp.mapping.select_next_item(),
 		["<C-d>"] = cmp.mapping.scroll_docs(4),
 		["<C-u>"] = cmp.mapping.scroll_docs(-4),
+		["<C-Space>"] = cmp.mapping.complete(),
 		["<Tab>"] = nil,
 		["<S-Tab>"] = nil,
 	}),
@@ -125,6 +126,16 @@ lsp.configure("sumneko_lua", {
 		},
 	},
 })
+
+-- lsp.configure("intelephense", {
+-- 	settings = {
+-- 		intelephense = {
+-- 			environment = {
+-- 				includePaths = { "/Users/yashjajoo/Documents/freightbro/fb-shipper/vendor" },
+-- 			},
+-- 		},
+-- 	},
+-- })
 
 -- lsp.setup({capabilities = capabilities})
 lsp.setup()

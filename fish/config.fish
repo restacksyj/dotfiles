@@ -9,6 +9,8 @@ set fish_greeting
 # alias oldvim="\vim"
 
 alias cl="clear"
+alias cat="bat"
+alias ls="exa"
 
 function vi
     if count $argv > /dev/null

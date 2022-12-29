@@ -41,7 +41,11 @@ vim.g.restacksyj_colorscheme = "rose-pine"
 
 function ColorMyPencils(color)
 	color = color or "rose-pine"
+	-- require("kanagawa").setup({
+	-- 	transparent = true,
+	-- })
 	vim.cmd.colorscheme(color)
+	-- vim.cmd("colorscheme kanagawa")
 
 	vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
 	vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })

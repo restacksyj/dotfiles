@@ -22,19 +22,21 @@ autocmd("BufWritePre", {
 	group = go_group,
 	pattern = "*.go",
 	callback = function()
-		require("go.format").gofmt()
-	end,
-})
-
-autocmd("BufWritePre", {
-	group = go_group,
-	pattern = "*.go",
-	callback = function()
+		-- require("go.format").gofmt()
 		require("go.format").goimport()
 	end,
 })
 
+-- autocmd("BufWritePre", {
+-- 	group = go_group,
+-- 	pattern = "*.go",
+-- 	callback = function()
+-- 		require("go.format").goimport()
+-- 	end,
+-- })
+
 vim.cmd([[autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o]])
+vim.cmd([[autocmd FileType php setlocal autoindent]])
 
 vim.g.netrw_browse_split = 0
 vim.g.netrw_banner = 0
