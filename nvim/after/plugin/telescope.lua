@@ -40,7 +40,24 @@ require("telescope").setup({
 
 require("telescope").load_extension("file_browser")
 
-vim.keymap.set("n", "<C-p>", builtin.find_files, {})
+vim.keymap.set("n", "<C-p>", function()
+	builtin.find_files({
+		hidden = true,
+		respect_gitignore = false,
+		file_ignore_patterns = {
+			".git/",
+			".cache",
+			-- "%.o",
+			-- "%.a",
+			-- "%.out",
+			-- "%.class",
+			-- "%.pdf",
+			-- "%.mkv",
+			-- "%.mp4",
+			-- "%.zip",
+		},
+	})
+end, {})
 vim.keymap.set("n", "<leader>vrc", function()
 	builtin.find_files({
 		prompt_title = "< Dotfiles >",

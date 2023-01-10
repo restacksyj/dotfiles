@@ -95,4 +95,13 @@ return require("packer").startup(function(use)
 		end,
 	})
 	use("rebelot/kanagawa.nvim")
+	use("leoluz/nvim-dap-go")
+	use("tpope/vim-abolish")
+	-- use({
+	-- 	"nvim-tree/nvim-tree.lua",
+	-- 	requires = {
+	-- 		"nvim-tree/nvim-web-devicons", -- optional, for file icons
+	-- 	},
+	-- 	tag = "nightly", -- optional, updated every week. (see issue #1193)
+	-- })
 end)

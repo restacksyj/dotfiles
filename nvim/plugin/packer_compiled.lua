@@ -210,6 +210,11 @@ _G.packer_plugins = {
     path = "/Users/yashjajoo/.local/share/nvim/site/pack/packer/start/nvim-dap",
     url = "https://github.com/mfussenegger/nvim-dap"
   },
+  ["nvim-dap-go"] = {
+    loaded = true,
+    path = "/Users/yashjajoo/.local/share/nvim/site/pack/packer/start/nvim-dap-go",
+    url = "https://github.com/leoluz/nvim-dap-go"
+  },
   ["nvim-dap-ui"] = {
     loaded = true,
     path = "/Users/yashjajoo/.local/share/nvim/site/pack/packer/start/nvim-dap-ui",
@@ -284,6 +289,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/yashjajoo/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
+  },
+  ["vim-abolish"] = {
+    loaded = true,
+    path = "/Users/yashjajoo/.local/share/nvim/site/pack/packer/start/vim-abolish",
+    url = "https://github.com/tpope/vim-abolish"
   },
   ["vim-fugitive"] = {
     loaded = true,
