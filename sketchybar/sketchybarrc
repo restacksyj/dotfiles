@@ -1,60 +1,42 @@
-# This is a demo config to bring across some of the most important commands more easily.
-# This is meant to be changed and configured, as it is intentionally kept sparse.
-# For a more advanced configuration example see https://github.com/FelixKratz/SketchyBar/discussions/47#discussioncomment-2027233
+PLUGIN_DIR="$HOME/.config/sketchybar/plugins"
+ITEM_DIR="$HOME/.config/sketchybar/items"
 
-##### Bar Appearance #####
-# Configuring the general appearance of the bar, these are only some of the
-# options available. For all options see:
-# https://felixkratz.github.io/SketchyBar/config/bar
-# If you are looking for other colors, see the color picker:
-# https://felixkratz.github.io/SketchyBar/config/tricks#color-picker
+source $HOME/.config/sketchybar/colors.sh
+source $HOME/.config/sketchybar/icons.sh
 
-sketchybar --bar height=32        \
-                 blur_radius=50   \
+export FONT="Hasklug Nerd Font Mono"
+export NERD_FONT="Hasklug Nerd Font Mono"
+
+sketchybar --bar height=30        \
+                 blur_radius=100  \
                  position=top     \
-                 padding_left=5   \
-                 padding_right=5  \
-                 color=0x44000000
+                 padding_left=10  \
+                 padding_right=10 \
+                 color=0x15ffffff \
+                 shadow=on
+
+sketchybar --default updates=when_shown                       \
+                     drawing=on                               \
+                     icon.font="$NERD_FONT:Regular:14.0"      \
+                     icon.color=0xffffffff                    \
+                     label.font="$FONT:Light:14.0"            \
+                     label.color=0xffffffff                   \
+                     label.padding_left=4                     \
+                     label.padding_right=4                    \
+                     icon.padding_left=4                      \
+                     icon.padding_right=4
+
+source $ITEM_DIR/apple.sh
+source $ITEM_DIR/spaces.sh
+source $ITEM_DIR/window_title.sh
+source $ITEM_DIR/clock.sh
+source $ITEM_DIR/battery.sh
+source $ITEM_DIR/cpu.sh
+source $ITEM_DIR/vpn.sh
+source $ITEM_DIR/wifi.sh
+source $ITEM_DIR/darkside.sh
 
 
-##### Changing Defaults #####
-# We now change some default values that are applied to all further items
-# For a full list of all available item properties see:
-# https://felixkratz.github.io/SketchyBar/config/items
+sketchybar --update
 
-sketchybar --default updates=when_shown                    \
-                     drawing=on                            \
-                     icon.font="Hack Nerd Font:Bold:17.0"  \
-                     icon.color=0xffffffff                 \
-                     label.font="Hack Nerd Font:Bold:14.0" \
-                     label.color=0xffffffff                \
-                     label.padding_left=4                  \
-                     label.padding_right=4                 \
-                     icon.padding_left=8                   \
-                     icon.padding_right=8
-
-##### Adding Mission Control Space Indicators #####
-# Now we add some space components:
-# https://felixkratz.github.io/SketchyBar/config/components#space----associate-mission-control-spaces-with-an-item
-# to indicate active and available mission control spaces
-
-sketchybar --add space code left                              \
-           --set code associated_display=1                    \
-                      associated_space=1                      \
-                      icon.font="Hack Nerd Font:Bold:20.0"    \
-                      icon=                                  \
-                      icon.highlight_color=0xff48aa2a         \
-                      label=code                              \
-                      click_script="yabai -m space --focus 1" \
-                                                              \
-           --add space tex left                               \
-           --set tex  associated_display=1                    \
-                      associated_space=2                      \
-                      icon=                                  \
-                      icon.highlight_color=0xfffab402         \
-                      label=tex                               \
-                      click_script="yabai -m space --focus 2"
-
-##### Adding Left Items #####
-# We add some regular items to the left side of the bar
-# only the properties deviatin
+echo "sketchybar configuration loaded.."
