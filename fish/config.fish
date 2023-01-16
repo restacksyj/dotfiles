@@ -16,8 +16,9 @@ alias rm="trash"
 # Git aliases
 
 alias gc="git commit"
-alias gco="git checkout"
+alias gs="git switch"
 alias ga="git add"
+alias gp="git pull origin $(git branch --show-current)"
 
 function vi
     if count $argv > /dev/null
