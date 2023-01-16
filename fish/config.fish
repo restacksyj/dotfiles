@@ -11,6 +11,13 @@ set fish_greeting
 alias cl="clear"
 alias cat="bat"
 alias ls="exa"
+alias rm="trash"
+
+# Git aliases
+
+alias gc="git commit"
+alias gco="git checkout"
+alias ga="git add"
 
 function vi
     if count $argv > /dev/null
