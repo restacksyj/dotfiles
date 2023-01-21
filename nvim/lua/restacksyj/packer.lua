@@ -85,7 +85,7 @@ return require("packer").startup(function(use)
 	-- trying out these for text objects line and entire
 	use("kana/vim-textobj-user")
 	use("kana/vim-textobj-line")
-	use("kana/vim-textobj-entire")
+	-- use("kana/vim-textobj-entire") -- very dangerous for me :)
 	use({
 		"phaazon/hop.nvim",
 		branch = "v2", -- optional but strongly recommended

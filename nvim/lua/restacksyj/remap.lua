@@ -46,3 +46,4 @@ vim.keymap.set("n", "<leader>ff", ":lua vim.lsp.buf.format(nil, 1000)<CR>")
 vim.keymap.set("n", "<leader>s", ":%s/\\<<C-r><C-w>\\>/<C-r><C-w>/gI<Left><Left><Left>")
 
 vim.keymap.set("n", "<leader>nid", ":IndentBlanklineToggle!<CR>", { silent = true })
+vim.keymap.set("n", "<leader>ye", "<cmd>%y+<CR>")

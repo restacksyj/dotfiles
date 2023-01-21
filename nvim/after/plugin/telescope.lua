@@ -47,6 +47,7 @@ vim.keymap.set("n", "<C-p>", function()
 		file_ignore_patterns = {
 			".git/",
 			".cache",
+			"node_modules/",
 			-- "%.o",
 			-- "%.a",
 			-- "%.out",

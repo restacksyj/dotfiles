@@ -10,3 +10,5 @@ wireshark/
 .DS_Store
 tmux/plugins/*
 tmux/resurrect
+
+raycast/extensions/*

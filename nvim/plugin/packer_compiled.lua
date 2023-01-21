@@ -305,11 +305,6 @@ _G.packer_plugins = {
     path = "/Users/yashjajoo/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
   },
-  ["vim-textobj-entire"] = {
-    loaded = true,
-    path = "/Users/yashjajoo/.local/share/nvim/site/pack/packer/start/vim-textobj-entire",
-    url = "https://github.com/kana/vim-textobj-entire"
-  },
   ["vim-textobj-line"] = {
     loaded = true,
     path = "/Users/yashjajoo/.local/share/nvim/site/pack/packer/start/vim-textobj-line",
