@@ -37,6 +37,7 @@ autocmd("BufWritePre", {
 
 vim.cmd([[autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o]])
 vim.cmd([[autocmd FileType php setlocal autoindent]])
+vim.api.nvim_create_autocmd({ "BufRead" }, { command = ":delm a-zA-Z0-9" })
 
 vim.g.netrw_browse_split = 0
 vim.g.netrw_banner = 0

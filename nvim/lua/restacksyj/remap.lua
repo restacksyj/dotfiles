@@ -47,3 +47,4 @@ vim.keymap.set("n", "<leader>s", ":%s/\\<<C-r><C-w>\\>/<C-r><C-w>/gI<Left><Left>
 
 vim.keymap.set("n", "<leader>nid", ":IndentBlanklineToggle!<CR>", { silent = true })
 vim.keymap.set("n", "<leader>ye", "<cmd>%y+<CR>")
+vim.keymap.set("n", "<leader>fp", "<cmd>echo expand('%:p')<CR>")

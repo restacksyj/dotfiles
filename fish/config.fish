@@ -16,9 +16,13 @@ alias rm="trash"
 # Git aliases
 
 alias gc="git commit"
-alias gs="git switch"
+alias gcm="git commit -m"
+alias gs="git status"
 alias ga="git add"
+alias gsw="git switch"
 alias gp="git pull origin $(git branch --show-current)"
+alias v="fd --type f --hidden --exclude .git | fzf-tmux -p --reverse | xargs nvim "
+alias f="z"
 
 function vi
     if count $argv > /dev/null
