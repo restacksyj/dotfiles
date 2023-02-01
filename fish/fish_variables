@@ -1,7 +1,7 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
 SETUVAR --export --path DOTENV_CONFIG_PATH:/Users/yashjajoo/\x2econfig/freightbro/\x2eenv\x2eqa
-SETUVAR --export GITLAB_TOKEN:glpat\x2dyqHvMZp5sxskTjwZySz5
+SETUVAR --export GITLAB_TOKEN:HxrV9PNjJXh5hzu7Xx7f
 SETUVAR VIRTUAL_ENV_DISABLE_PROMPT:true
 SETUVAR ZO_CMD:zo
 SETUVAR Z_CMD:z

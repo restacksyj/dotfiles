@@ -8,7 +8,14 @@ set fish_greeting
 # alias vi="nvim ."
 # alias oldvim="\vim"
 
+function current_branch  
+    set ref (git symbolic-ref HEAD 2> /dev/null); or \
+    set ref (git rev-parse --short HEAD 2> /dev/null); or return
+    echo $ref | sed -e 's|^refs/heads/||'
+end
+
 alias cl="clear"
+alias c="clear"
 alias cat="bat"
 alias ls="exa"
 alias rm="trash"
@@ -19,10 +26,13 @@ alias gc="git commit"
 alias gcm="git commit -m"
 alias gs="git status"
 alias ga="git add"
+alias gfa="git fetch --all"
 alias gsw="git switch"
-alias gp="git pull origin $(git branch --show-current)"
+alias gpl="git pull origin (current_branch)"
+alias gpu="git push origin (current_branch)"
 alias v="fd --type f --hidden --exclude .git | fzf-tmux -p --reverse | xargs nvim "
 alias f="z"
+
 
 function vi
     if count $argv > /dev/null
