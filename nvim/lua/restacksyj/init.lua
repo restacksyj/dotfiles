@@ -35,8 +35,10 @@ autocmd("BufWritePre", {
 -- 	end,
 -- })
 
+-- To avoid adding comments in next line
 vim.cmd([[autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o]])
 vim.cmd([[autocmd FileType php setlocal autoindent]])
+-- vim.cmd([[autocmd FileType netrw unmap <buffer> <C-m>]])
 vim.api.nvim_create_autocmd({ "BufRead" }, { command = ":delm a-zA-Z0-9" })
 
 vim.g.netrw_browse_split = 0

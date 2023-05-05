@@ -12,7 +12,6 @@ require("telescope").setup({
 		file_previewer = require("telescope.previewers").vim_buffer_cat.new,
 		grep_previewer = require("telescope.previewers").vim_buffer_vimgrep.new,
 		qflist_previewer = require("telescope.previewers").vim_buffer_qflist.new,
-
 		mappings = {
 			i = {
 				["<C-x>"] = false,
@@ -35,28 +34,55 @@ require("telescope").setup({
 			theme = "dropdown",
 			previewer = false,
 		},
+		fzf = {
+			fuzzy = true, -- false will only do exact matching
+			override_generic_sorter = true, -- override the generic sorter
+			override_file_sorter = true, -- override the file sorter
+			case_mode = "smart_case", -- or "ignore_case" or "respect_case"
+			-- the default case_mode is "smart_case"
+		},
 	},
 })
 
 require("telescope").load_extension("file_browser")
+require("telescope").load_extension("fzf")
 
 vim.keymap.set("n", "<C-p>", function()
 	builtin.find_files({
 		hidden = true,
-		respect_gitignore = false,
-		file_ignore_patterns = {
-			".git/",
-			".cache",
-			"node_modules/",
-			-- "%.o",
-			-- "%.a",
-			-- "%.out",
-			-- "%.class",
-			-- "%.pdf",
-			-- "%.mkv",
-			-- "%.mp4",
-			-- "%.zip",
+		find_command = {
+			"rg",
+			"--files",
+			"--hidden",
+			"--no-ignore",
+			"-g",
+			"!.git",
+			"-g",
+			"!node_modules",
+			"-g",
+			"!build",
+			"-g",
+			"!dist",
+			"-g",
+			"!vendor",
+			"-g",
+			"!storage",
 		},
+		-- no_ignore = true,
+		-- find_command = { "rg", "--files", "--iglob", "!.git", "!node_modules/*", "--hidden" },
+		-- file_ignore_patterns = {
+		-- 	".git/",
+		-- 	".cache",
+		-- 	"node_modules",
+		-- 	-- "%.o",
+		-- 	-- "%.a",
+		-- 	-- "%.out",
+		-- 	-- "%.class",
+		-- 	-- "%.pdf",
+		-- 	-- "%.mkv",
+		-- 	-- "%.mp4",
+		-- 	-- "%.zip",
+		-- },
 	})
 end, {})
 vim.keymap.set("n", "<leader>vrc", function()
@@ -76,13 +102,24 @@ vim.keymap.set("n", "<leader>fb", function()
 	})
 end, {})
 
+local function isempty(s)
+	return s == nil or s == ""
+end
+
 vim.keymap.set("n", "<leader>ps", function()
-	builtin.grep_string({ search = vim.fn.input("Grep > ") })
+	local search_string = vim.fn.input("Grep > ")
+	if not isempty(search_string) then
+		builtin.grep_string({ search = search_string })
+	else
+		--  Very hacky way don't do it
+		vim.cmd(":")
+	end
 end)
 vim.keymap.set("n", "<leader>pw", function()
 	builtin.grep_string({ search = vim.fn.expand("<cword>") })
 end)
 vim.keymap.set("n", "<leader>gc", builtin.git_branches, {})
+vim.keymap.set("n", "<leader>fg", builtin.live_grep, {})
 vim.keymap.set("n", "<leader>dal", "<cmd>Telescope diagnostics<CR>", {})
 vim.keymap.set("n", "<leader>dl", function()
 	builtin.diagnostics({ bufnr = 0 })

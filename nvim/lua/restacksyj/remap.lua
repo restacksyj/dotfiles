@@ -1,4 +1,5 @@
 vim.g.mapleader = " "
+vim.g.maplocalleader = ";"
 vim.keymap.set("n", "<leader>pv", ":Ex<CR>")
 vim.keymap.set("n", "<leader>u", ":UndotreeShow<CR>")
 
@@ -40,6 +41,7 @@ vim.keymap.set("n", "<leader>k", "<cmd>lnext<CR>zz")
 vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 
 vim.keymap.set("i", "<C-c>", "<Esc>")
+vim.keymap.set("i", "<C-d>", "<C-O>D")
 
 -- vim.keymap.set("n","<leader>f","mF:%!eslint_d --stdin --fix-to-stdout --stdin-filename %<CR>`F")
 vim.keymap.set("n", "<leader>ff", ":lua vim.lsp.buf.format(nil, 1000)<CR>")
@@ -48,3 +50,4 @@ vim.keymap.set("n", "<leader>s", ":%s/\\<<C-r><C-w>\\>/<C-r><C-w>/gI<Left><Left>
 vim.keymap.set("n", "<leader>nid", ":IndentBlanklineToggle!<CR>", { silent = true })
 vim.keymap.set("n", "<leader>ye", "<cmd>%y+<CR>")
 vim.keymap.set("n", "<leader>fp", "<cmd>echo expand('%:p')<CR>")
+vim.keymap.set("n", "\\", ":Neotree reveal toggle<CR>", { silent = true })

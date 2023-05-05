@@ -24,8 +24,13 @@ tabnine:setup({
 })
 
 local capabilities = require("cmp_nvim_lsp").default_capabilities(vim.lsp.protocol.make_client_capabilities())
+local cmp_action = require('lsp-zero').cmp_action()
 
 lsp.setup_nvim_cmp({
+    preselect = 'none',
+    completion = {
+    completeopt = 'menu,menuone,noinsert,noselect'
+    },
 	mapping = lsp.defaults.cmp_mappings({
 		-- add behavior: cmp_select if you have to disable the next automatically selected
 		["<C-p>"] = cmp.mapping.select_prev_item(),
@@ -33,8 +38,12 @@ lsp.setup_nvim_cmp({
 		["<C-d>"] = cmp.mapping.scroll_docs(4),
 		["<C-u>"] = cmp.mapping.scroll_docs(-4),
 		["<C-Space>"] = cmp.mapping.complete(),
+		["<C-e>"] = cmp.mapping.abort(),
 		["<Tab>"] = nil,
+		-- ["<CR>"] = cmp.config.disable,
 		["<S-Tab>"] = nil,
+         ['<C-f>'] = cmp_action.luasnip_jump_forward(),
+        ['<C-b>'] = cmp_action.luasnip_jump_backward(),
 	}),
 })
 
@@ -178,17 +187,30 @@ lsp.configure("jsonls", {
 	},
 })
 
--- lsp.configure("intelephense", {
--- 	settings = {
--- 		intelephense = {
--- 			environment = {
--- 				includePaths = { "/Users/yashjajoo/Documents/freightbro/fb-shipper/vendor" },
--- 			},
--- 		},
--- 	},
--- })
+lsp.configure("intelephense", {
+	settings = {
+		intelephense = {
+			-- environment = {
+			-- 	includePaths = { "/Users/yashjajoo/Documents/freightbro/fb-shipper/vendor" },
+			-- },
+			-- Add wordpress to the list of stubs
+			-- stubs = {
+			diagnostics = {
+				undefinedTypes = false,
+				-- undefinedFunctions = false,
+				-- undefinedConstants = false,
+				-- undefinedClassConstants = false,
+				undefinedMethods = false,
+				-- undefinedProperties = false,
+				-- undefinedVariables = false,
+				-- enable = true,
+			},
+		},
+	},
+})
 
 -- lsp.setup({capabilities = capabilities})
+-- require("luasnip.loaders.from_vscode").lazy_load()
 lsp.setup()
 
 -- this is for inline diagnostics
@@ -204,21 +226,31 @@ null_ls.setup({
 	sources = {
 		null_ls.builtins.formatting.stylua,
 		null_ls.builtins.code_actions.eslint_d,
-		null_ls.builtins.diagnostics.eslint_d.with({
-			condition = function(utils)
-				return utils.root_has_file({
-					".eslintrc",
-					".eslintrc.js",
-					".eslintrc.cjs",
-					".eslintrc.yaml",
-					".eslintrc.yml",
-					".eslintrc.json",
-				}) -- and so on
-			end,
-		}),
+		-- null_ls.builtins.diagnostics.eslint_d.with({
+		-- 	condition = function(utils)
+		-- 		return utils.root_has_file({
+		-- 			".eslintrc",
+		-- 			".eslintrc.js",
+		-- 			".eslintrc.cjs",
+		-- 			".eslintrc.yaml",
+		-- 			".eslintrc.yml",
+		-- 			".eslintrc.json",
+		-- 		}) -- and so on
+		-- 	end,
+		-- }),
 		null_ls.builtins.formatting.eslint_d.with({
 			-- args = { "--stdin", "--fix-to-stdout", "--stdin-filename", "%filepath" },
 		}),
 		null_ls.builtins.completion.spell,
+		null_ls.builtins.diagnostics.jsonlint,
+		null_ls.builtins.formatting.jq,
+		null_ls.builtins.formatting.black,
+		-- null_ls.builtins.formatting.python
+		-- null_ls.builtins.diagnostics.phpcs.with({ -- Change how the php linting will work
+		-- 	prefer_local = "vendor/bin",
+		-- }),
+		-- null_ls.builtins.formatting.phpcbf.with({ -- Use the local installation first
+		-- 	prefer_local = "vendor/bin",
+		-- }),
 	},
 })

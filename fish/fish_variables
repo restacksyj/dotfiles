@@ -1,5 +1,6 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
+SETUVAR --export CC:gcc\x2d12
 SETUVAR --export --path DOTENV_CONFIG_PATH:/Users/yashjajoo/\x2econfig/freightbro/\x2eenv\x2eqa
 SETUVAR --export GITLAB_TOKEN:HxrV9PNjJXh5hzu7Xx7f
 SETUVAR VIRTUAL_ENV_DISABLE_PROMPT:true
@@ -304,6 +305,7 @@ SETUVAR fish_pager_color_description:B3A06D\x1eyellow\x1e\x2di
 SETUVAR fish_pager_color_prefix:cyan\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
 SETUVAR fish_pager_color_selected_background:\x2dr
+SETUVAR fish_user_paths:/Users/yashjajoo/\x2econfig/local/scripts\x1e/Users/yashjajoo/go/bin\x1e/Users/yashjajoo/\x2elocal/bin
 SETUVAR nvm_data:/Users/yashjajoo/\x2elocal/share/nvm
 SETUVAR nvm_default_version:v16\x2e19\x2e0
 SETUVAR nvm_mirror:https\x3a//nodejs\x2eorg/dist

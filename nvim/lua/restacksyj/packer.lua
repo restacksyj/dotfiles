@@ -21,6 +21,7 @@ return require("packer").startup(function(use)
 	-- use("folke/tokyonight.nvim")
 	use({ "catppuccin/nvim", as = "catppuccin" })
 	use({ "rose-pine/neovim", as = "rose-pine" })
+	use({ "ellisonleao/gruvbox.nvim" })
 
 	use("nvim-treesitter/nvim-treesitter", {
 		run = ":TSUpdate",
@@ -109,4 +110,50 @@ return require("packer").startup(function(use)
 		-- tag = 'release' -- To use the latest release (do not use this if you run Neovim nightly or dev builds!)
 	})
 	use("chentoast/marks.nvim")
+	use({
+		"nvim-neo-tree/neo-tree.nvim",
+		branch = "v2.x",
+		requires = {
+			"nvim-lua/plenary.nvim",
+			"nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
+			"MunifTanjim/nui.nvim",
+		},
+	})
+	use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" })
+	use({
+		"nvim-neorg/neorg",
+		-- run = ":Neorg sync-parsers", -- This is the important bit!
+		config = function()
+			require("neorg").setup({
+				load = {
+					["core.defaults"] = {},
+					["core.completion"] = {
+						config = {
+							engine = "nvim-cmp",
+						},
+					},
+					["core.concealer"] = {
+						config = {
+							width = "content",
+						},
+					},
+					["core.dirman"] = {
+						config = {
+							workspaces = {
+								work = "~/Documents/notes/work",
+								home = "~/Documents/notes/home",
+							},
+							default_workspace = "work",
+						},
+					},
+				},
+			})
+		end,
+	})
+
+	use({
+		"kkoomen/vim-doge",
+		run = ":call doge#install()",
+	})
+	use("nvim-pack/nvim-spectre")
 end)

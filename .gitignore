@@ -12,3 +12,5 @@ tmux/plugins/*
 tmux/resurrect
 
 raycast/extensions/*
+nvim/plugin/packer_compiled.lua
+karabiner/automatic_backups/*

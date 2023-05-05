@@ -14,6 +14,10 @@ function current_branch
     echo $ref | sed -e 's|^refs/heads/||'
 end
 
+function parent
+    git show-branch | grep '*' | grep -v "$(git rev-parse --abbrev-ref HEAD)" | head -n1 | sed 's/.*\[\(.*\)\].*/\1/' | sed 's/[\^~].*//'
+end
+
 alias cl="clear"
 alias c="clear"
 alias cat="bat"
@@ -30,6 +34,7 @@ alias gfa="git fetch --all"
 alias gsw="git switch"
 alias gpl="git pull origin (current_branch)"
 alias gpu="git push origin (current_branch)"
+# alias parent_branch="(parent)"
 alias v="fd --type f --hidden --exclude .git | fzf-tmux -p --reverse | xargs nvim "
 alias f="z"
 

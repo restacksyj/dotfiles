@@ -144,6 +144,11 @@ _G.packer_plugins = {
     path = "/Users/yashjajoo/.local/share/nvim/site/pack/packer/start/go.nvim",
     url = "https://github.com/ray-x/go.nvim"
   },
+  ["gruvbox.nvim"] = {
+    loaded = true,
+    path = "/Users/yashjajoo/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
+    url = "https://github.com/ellisonleao/gruvbox.nvim"
+  },
   harpoon = {
     loaded = true,
     path = "/Users/yashjajoo/.local/share/nvim/site/pack/packer/start/harpoon",
@@ -200,6 +205,22 @@ _G.packer_plugins = {
     path = "/Users/yashjajoo/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
+  ["neo-tree.nvim"] = {
+    loaded = true,
+    path = "/Users/yashjajoo/.local/share/nvim/site/pack/packer/start/neo-tree.nvim",
+    url = "https://github.com/nvim-neo-tree/neo-tree.nvim"
+  },
+  neorg = {
+    config = { "\27LJ\2\n×\2\0\0\a\0\19\0\0256\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\17\0005\3\3\0004\4\0\0=\4\4\0035\4\6\0005\5\5\0=\5\a\4=\4\b\0035\4\n\0005\5\t\0=\5\a\4=\4\v\0035\4\15\0005\5\r\0005\6\f\0=\6\14\5=\5\a\4=\4\16\3=\3\18\2B\0\2\1K\0\1\0\tload\1\0\0\16core.dirman\1\0\0\15workspaces\1\0\1\22default_workspace\twork\1\0\2\twork\27~/Documents/notes/work\thome\27~/Documents/notes/home\19core.concealer\1\0\0\1\0\1\nwidth\fcontent\20core.completion\vconfig\1\0\0\1\0\1\vengine\rnvim-cmp\18core.defaults\1\0\0\nsetup\nneorg\frequire\0" },
+    loaded = true,
+    path = "/Users/yashjajoo/.local/share/nvim/site/pack/packer/start/neorg",
+    url = "https://github.com/nvim-neorg/neorg"
+  },
+  ["nui.nvim"] = {
+    loaded = true,
+    path = "/Users/yashjajoo/.local/share/nvim/site/pack/packer/start/nui.nvim",
+    url = "https://github.com/MunifTanjim/nui.nvim"
+  },
   ["null-ls.nvim"] = {
     loaded = true,
     path = "/Users/yashjajoo/.local/share/nvim/site/pack/packer/start/null-ls.nvim",
@@ -244,6 +265,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/yashjajoo/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
+  },
+  ["nvim-spectre"] = {
+    loaded = true,
+    path = "/Users/yashjajoo/.local/share/nvim/site/pack/packer/start/nvim-spectre",
+    url = "https://github.com/nvim-pack/nvim-spectre"
   },
   ["nvim-surround"] = {
     loaded = true,
@@ -290,6 +316,11 @@ _G.packer_plugins = {
     path = "/Users/yashjajoo/.local/share/nvim/site/pack/packer/start/telescope-file-browser.nvim",
     url = "https://github.com/nvim-telescope/telescope-file-browser.nvim"
   },
+  ["telescope-fzf-native.nvim"] = {
+    loaded = true,
+    path = "/Users/yashjajoo/.local/share/nvim/site/pack/packer/start/telescope-fzf-native.nvim",
+    url = "https://github.com/nvim-telescope/telescope-fzf-native.nvim"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/Users/yashjajoo/.local/share/nvim/site/pack/packer/start/telescope.nvim",
@@ -304,6 +335,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/yashjajoo/.local/share/nvim/site/pack/packer/start/vim-abolish",
     url = "https://github.com/tpope/vim-abolish"
+  },
+  ["vim-doge"] = {
+    loaded = true,
+    path = "/Users/yashjajoo/.local/share/nvim/site/pack/packer/start/vim-doge",
+    url = "https://github.com/kkoomen/vim-doge"
   },
   ["vim-fugitive"] = {
     loaded = true,
@@ -332,6 +368,10 @@ time([[Defining packer_plugins]], false)
 time([[Config for hop.nvim]], true)
 try_loadstring("\27LJ\2\nU\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\1\tkeys\28etovxqpdygfblzhckisuran\nsetup\bhop\frequire\0", "config", "hop.nvim")
 time([[Config for hop.nvim]], false)
+-- Config for: neorg
+time([[Config for neorg]], true)
+try_loadstring("\27LJ\2\n×\2\0\0\a\0\19\0\0256\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\17\0005\3\3\0004\4\0\0=\4\4\0035\4\6\0005\5\5\0=\5\a\4=\4\b\0035\4\n\0005\5\t\0=\5\a\4=\4\v\0035\4\15\0005\5\r\0005\6\f\0=\6\14\5=\5\a\4=\4\16\3=\3\18\2B\0\2\1K\0\1\0\tload\1\0\0\16core.dirman\1\0\0\15workspaces\1\0\1\22default_workspace\twork\1\0\2\twork\27~/Documents/notes/work\thome\27~/Documents/notes/home\19core.concealer\1\0\0\1\0\1\nwidth\fcontent\20core.completion\vconfig\1\0\0\1\0\1\vengine\rnvim-cmp\18core.defaults\1\0\0\nsetup\nneorg\frequire\0", "config", "neorg")
+time([[Config for neorg]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

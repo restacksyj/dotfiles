@@ -1,3 +1,6 @@
+require("rose-pine").setup({
+	disable_background = true,
+})
 vim.g.restacksyj_colorscheme = "rose-pine"
 
 -- function ColorMyPencils()

@@ -1,0 +1,21 @@
+#!/bin/bash
+_remote="dev1"
+_user="yj"
+ 
+vars=("$@")
+command="/var/www/fb-${vars[0]}-${vars[1]}"
+if [ "$2" == "dev" ]; then
+    vars[1]=""
+    command="/var/www/fb-${vars[0]}"
+fi
+
+echo $command
+echo "Local system name: $HOSTNAME"
+ 
+echo "*** Running commands on remote host named $_remote ***"
+ssh -T $_remote <<EOL
+   cd "${command}"
+   echo "The current branch is"
+   git rev-parse --abbrev-ref HEAD
+EOL
+

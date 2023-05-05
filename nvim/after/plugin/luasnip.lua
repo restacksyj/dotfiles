@@ -1,7 +1,7 @@
-local ls = require("luasnip")
-local s = ls.snippet
-local i = ls.insert_node
-local t = ls.text_node
+-- local ls = require("luasnip")
+-- local s = ls.snippet
+-- local i = ls.insert_node
+-- local t = ls.text_node
 
 -- ls.add_snippets("lua", {
 -- 	s("lf", {
@@ -23,3 +23,5 @@ local t = ls.text_node
 -- 	--    arg 2: a node
 -- 	s("simple", t("wow, you were right!")),
 -- })
+-- ls.log.set_loglevel("debug")
+-- print(vim.fn.stdpath("log"))

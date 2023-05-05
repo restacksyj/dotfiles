@@ -1,0 +1,19 @@
+#!/bin/bash
+_remote="dev1"
+_remote2="dev2"
+_user="yj"
+ 
+command="/var/www/admin-backend-$1"
+echo $command
+echo "Local system name: $HOSTNAME"
+ 
+echo "*** Running commands on remote host named $_remote ***"
+ssh -T $_remote <<EOL
+   cd "${command}"
+   echo "The current branch is"
+   git checkout $1
+   git pull origin $1
+   pm2 reload 'Admin'
+EOL
+
+
