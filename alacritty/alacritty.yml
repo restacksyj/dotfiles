@@ -34,9 +34,9 @@ window:
 #
 font:
   normal:
-    family: 'Hack Nerd Font Mono'
+    family: 'Berkeley Mono'
     style: Regular
-  size: 22.0
+  size: 20.0
 
 mouse:
   hide_when_typing: true
@@ -73,9 +73,6 @@ key_bindings:
   - { key: W, mods: Command, chars: "\x02x" }
   - { key: Z, mods: Command, chars: "\x02z" }
    
-
-
-
 
 
 key_bindings:

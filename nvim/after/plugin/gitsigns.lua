@@ -1,4 +1,7 @@
 require("gitsigns").setup({
+	current_line_blame_opts = {
+		virt_text_pos = "overlay", -- 'eol' | 'overlay' | 'right_align'
+	},
 	on_attach = function(bufnr)
 		local gs = package.loaded.gitsigns
 
@@ -24,7 +27,8 @@ require("gitsigns").setup({
 		-- end, { expr = true })
 
 		-- Actions
-		vim.keymap.set("n", "<leader>tb", gs.toggle_current_line_blame, { buffer = bufnr })
+		vim.keymap.set("n", "<leader>tt", gs.toggle_current_line_blame, { buffer = bufnr })
+		vim.keymap.set("n", "<leader>tb", gs.blame_line, { buffer = bufnr })
 		vim.keymap.set("n", "<leader>td", gs.toggle_deleted, { buffer = bufnr })
 	end,
 })

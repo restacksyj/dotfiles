@@ -24,13 +24,20 @@ tabnine:setup({
 })
 
 local capabilities = require("cmp_nvim_lsp").default_capabilities(vim.lsp.protocol.make_client_capabilities())
-local cmp_action = require('lsp-zero').cmp_action()
+local cmp_action = require("lsp-zero").cmp_action()
 
 lsp.setup_nvim_cmp({
-    preselect = 'none',
-    completion = {
-    completeopt = 'menu,menuone,noinsert,noselect'
-    },
+	preselect = "none",
+	completion = {
+		completeopt = "menu,menuone,noinsert,noselect",
+	},
+	source = {
+		{ name = "path" },
+		{ name = "nvim_lsp" },
+		{ name = "buffer", keyword_length = 3 },
+		{ name = "luasnip", keyword_length = 2 },
+		{ name = "neorg" },
+	},
 	mapping = lsp.defaults.cmp_mappings({
 		-- add behavior: cmp_select if you have to disable the next automatically selected
 		["<C-p>"] = cmp.mapping.select_prev_item(),
@@ -42,13 +49,14 @@ lsp.setup_nvim_cmp({
 		["<Tab>"] = nil,
 		-- ["<CR>"] = cmp.config.disable,
 		["<S-Tab>"] = nil,
-         ['<C-f>'] = cmp_action.luasnip_jump_forward(),
-        ['<C-b>'] = cmp_action.luasnip_jump_backward(),
+		["<C-f>"] = cmp_action.luasnip_jump_forward(),
+		["<C-b>"] = cmp_action.luasnip_jump_backward(),
 	}),
 })
 
 local lsp_formatting = function(bufnr)
 	vim.lsp.buf.format({
+		-- timeout_ms = 2000,
 		filter = function(client)
 			-- apply whatever logic you want (in this example, we'll only use null-ls)
 			return client.name == "null-ls"
@@ -93,7 +101,7 @@ lsp.on_attach(function(client, bufnr)
 		vim.lsp.buf.workspace_symbol()
 	end, opts)
 	bind("n", "<leader>vd", function()
-		vim.diagnostic.open_float()
+		vim.diagnostic.open_float(nil, { focus = true, scope = "cursor" })
 	end)
 	bind("n", "[d", function()
 		vim.diagnostic.goto_next()
@@ -245,6 +253,9 @@ null_ls.setup({
 		null_ls.builtins.diagnostics.jsonlint,
 		null_ls.builtins.formatting.jq,
 		null_ls.builtins.formatting.black,
+		-- null_ls.builtins.formatting.prettier.with({
+		-- 	extra_filetypes = { "astro" },
+		-- }),
 		-- null_ls.builtins.formatting.python
 		-- null_ls.builtins.diagnostics.phpcs.with({ -- Change how the php linting will work
 		-- 	prefer_local = "vendor/bin",

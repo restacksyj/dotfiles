@@ -31,7 +31,7 @@ return require("packer").startup(function(use)
 	use("romgrk/nvim-treesitter-context")
 	use("jose-elias-alvarez/null-ls.nvim")
 
-	use("mfussenegger/nvim-dap")
+	-- use("mfussenegger/nvim-dap")
 	use("rcarriga/nvim-dap-ui")
 	use("theHamsta/nvim-dap-virtual-text")
 
@@ -122,6 +122,7 @@ return require("packer").startup(function(use)
 	use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" })
 	use({
 		"nvim-neorg/neorg",
+		branch = "v4.0.1",
 		-- run = ":Neorg sync-parsers", -- This is the important bit!
 		config = function()
 			require("neorg").setup({
@@ -151,9 +152,45 @@ return require("packer").startup(function(use)
 		end,
 	})
 
-	use({
-		"kkoomen/vim-doge",
-		run = ":call doge#install()",
-	})
+	-- use({
+	-- 	"kkoomen/vim-doge",
+	-- 	run = ":call doge#install()",
+	-- 	config = function()
+	-- 		require("vim-doge").setup({
+	-- 			doge_config = {
+	-- 				doge_mapping = "<leader>q",
+	-- 			},
+	-- 		})
+	-- 	end,
+	-- })
 	use("nvim-pack/nvim-spectre")
+	use({
+		"stevearc/oil.nvim",
+	})
+	use({
+		"nvim-treesitter/nvim-treesitter-textobjects",
+		after = "nvim-treesitter",
+		requires = "nvim-treesitter/nvim-treesitter",
+	})
+	use({
+		"Wansmer/treesj",
+		requires = { "nvim-treesitter" },
+	})
+	use({
+		"williamboman/mason.nvim",
+		"mfussenegger/nvim-dap",
+		"jay-babu/mason-nvim-dap.nvim",
+	})
+	use({
+		"folke/todo-comments.nvim",
+		requires = { "nvim-lua/plenary.nvim" },
+	})
+	use({
+		"nosduco/remote-sshfs.nvim",
+		requires = { { "nvim-telescope/telescope.nvim" } }, -- optional if you declare plugin somewhere else
+	})
+	-- use({
+	-- 	"AckslD/nvim-neoclip.lua",
+	-- })
+	-- use("xiyaowong/transparent.nvim")
 end)

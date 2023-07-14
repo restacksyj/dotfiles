@@ -14,6 +14,7 @@ vim.api.nvim_set_keymap("n", "<Leader>di", "<CMD>lua require('dap').step_into()<
 vim.api.nvim_set_keymap("n", "<Leader>do", "<CMD>lua require('dap').step_out()<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<Leader>dO", "<CMD>lua require('dap').step_over()<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<Leader>dt", "<CMD>lua require('dap').terminate()<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<Leader>dui", "<cmd>lua require('dapui').toggle()<CR>", { noremap = true, silent = true })
 
 dap.adapters.node2 = {
 	type = "executable",
@@ -28,13 +29,41 @@ dap.adapters.chrome = {
 	args = { vim.fn.stdpath("data") .. "/mason/packages/chrome-debug-adapter/out/src/chromeDebug.js" },
 }
 
+dap.adapters["pwa-node"] = {
+	type = "server",
+	host = "127.0.0.1",
+	port = 9229,
+	executable = {
+		command = "node",
+		args = { "~/.config/local/js-debug/src/dapDebugServer.js" },
+	},
+}
+
 dap.configurations.javascript = {
+	-- {
+	-- 	name = "Launch",
+	-- 	type = "node2",
+	-- 	request = "launch",
+	-- 	program = "${file}",
+	-- 	cwd = vim.loop.cwd(),
+	-- 	sourceMaps = true,
+	-- 	protocol = "inspector",
+	-- 	console = "integratedTerminal",
+	-- },
 	{
-		name = "Launch",
+		type = "pwa-node",
+		request = "launch",
+		name = "Launch file",
+		program = "${file}",
+		-- cwd = "${workspaceFolder}",
+		cwd = vim.fn.getcwd(),
+	},
+	{
 		type = "node2",
+		name = "Launch",
 		request = "launch",
 		program = "${file}",
-		cwd = vim.loop.cwd(),
+		cwd = vim.fn.getcwd(),
 		sourceMaps = true,
 		protocol = "inspector",
 		console = "integratedTerminal",

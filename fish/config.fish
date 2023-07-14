@@ -3,10 +3,17 @@
 # !! Contents within this block are managed by 'conda init' !!
 # eval /Users/yashjajoo/opt/anaconda3/bin/conda "shell.fish" "hook" $argv | source
 # <<< conda initialize <<<
-set fish_greeting
 
-# alias vi="nvim ."
-# alias oldvim="\vim"
+# if status is-interactive
+# and not set -q TMUX
+#     if tmux has-session -t home
+# 	exec tmux attach-session -t home
+#     else
+#         tmux new-session -s home
+#     end
+# end
+
+set fish_greeting
 
 function current_branch  
     set ref (git symbolic-ref HEAD 2> /dev/null); or \
@@ -37,6 +44,8 @@ alias gpu="git push origin (current_branch)"
 # alias parent_branch="(parent)"
 alias v="fd --type f --hidden --exclude .git | fzf-tmux -p --reverse | xargs nvim "
 alias f="z"
+alias dy="dig +noall +answer +additional $argv @dns.toys"
+alias fl="redis-cli FLUSHDB"
 
 
 function vi
@@ -57,3 +66,5 @@ export PATH="$HOME/.cargo/bin:$PATH"
 # neofetch
 # export PATH=/Users/yashjajoo/.local/share/solana/install/active_release/bin
 # :/Users/yashjajoo/.local/share/solana/install/active_release/bin:/Users/yashjajoo/opt/anaconda3/bin:/Users/yashjajoo/opt/anaconda3/condabin:/Users/yashjajoo/.local/share/nvm/v12.22.12/bin:/usr/local/opt/php@7.1/sbin:/usr/local/opt/php@7.1/bin:/usr/local/opt/php@7.3/sbin:/usr/local/opt/php@7.3/bin:/usr/local/opt/php@7.2/sbin:/usr/local/opt/php@7.2/bin:/Users/yashjajoo/.fig/bin:/Users/yashjajoo/Documents/development/flutter/bin:/Users/yashjajoo/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/usr/local/share/dotnet:~/.dotnet/tools:/usr/local/go/bin:/Applications/Wireshark.app/Contents/MacOS:/Applications/kitty.app/Contents/MacOS:/Applications/Visual Studio Code.app/Contents/Resources/app/bin
+
+set -q GHCUP_INSTALL_BASE_PREFIX[1]; or set GHCUP_INSTALL_BASE_PREFIX $HOME ; set -gx PATH $HOME/.cabal/bin /Users/yashjajoo/.ghcup/bin $PATH # ghcup-env

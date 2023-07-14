@@ -6,6 +6,8 @@ end
 
 require("telescope").setup({
 	defaults = {
+		file_ignore_patterns = {--[[  "node_modules", ".git", "build", "dist", "vendor"  ]]
+		},
 		file_sorter = require("telescope.sorters").get_fzy_sorter,
 		prompt_prefix = " >",
 		color_devicons = true,
@@ -29,6 +31,19 @@ require("telescope").setup({
 			},
 		},
 	},
+	pickers = {
+		find_files = {
+			find_command = {
+				"fd",
+				".",
+				"--type",
+				"file",
+				"--no-ignore-vcs",
+				"--hidden",
+				"--strip-cwd-prefix",
+			},
+		},
+	},
 	extensions = {
 		file_browser = {
 			theme = "dropdown",
@@ -46,28 +61,33 @@ require("telescope").setup({
 
 require("telescope").load_extension("file_browser")
 require("telescope").load_extension("fzf")
+require("telescope").load_extension("remote-sshfs")
 
 vim.keymap.set("n", "<C-p>", function()
 	builtin.find_files({
 		hidden = true,
-		find_command = {
-			"rg",
-			"--files",
-			"--hidden",
-			"--no-ignore",
-			"-g",
-			"!.git",
-			"-g",
-			"!node_modules",
-			"-g",
-			"!build",
-			"-g",
-			"!dist",
-			"-g",
-			"!vendor",
-			"-g",
-			"!storage",
-		},
+		-- find_command = vim.fn.executable("fdfind") == 1
+		-- 		and { "fdfind", "--strip-cwd-prefix", "--type", "--hidden", "f" }
+		-- 	or nil,
+
+		-- find_command = {
+		-- 	"rg",
+		-- 	"--files",
+		-- 	"--hidden",
+		-- 	"--no-ignore",
+		-- 	"-g",
+		-- 	"!.git",
+		-- 	"-g",
+		-- 	"!node_modules",
+		-- 	"-g",
+		-- 	"!build",
+		-- 	"-g",
+		-- 	"!dist",
+		-- 	"-g",
+		-- 	"!vendor",
+		-- 	"-g",
+		-- 	"!storage",
+		-- },
 		-- no_ignore = true,
 		-- find_command = { "rg", "--files", "--iglob", "!.git", "!node_modules/*", "--hidden" },
 		-- file_ignore_patterns = {
@@ -119,7 +139,7 @@ vim.keymap.set("n", "<leader>pw", function()
 	builtin.grep_string({ search = vim.fn.expand("<cword>") })
 end)
 vim.keymap.set("n", "<leader>gc", builtin.git_branches, {})
-vim.keymap.set("n", "<leader>fg", builtin.live_grep, {})
+vim.keymap.set("n", "<leader>fh", builtin.live_grep, {})
 vim.keymap.set("n", "<leader>dal", "<cmd>Telescope diagnostics<CR>", {})
 vim.keymap.set("n", "<leader>dl", function()
 	builtin.diagnostics({ bufnr = 0 })
@@ -129,7 +149,7 @@ vim.keymap.set("n", "<leader>fj", function()
 	builtin.current_buffer_fuzzy_find({ height = 10, previewer = false })
 end, {})
 
-vim.keymap.set("n", "<leader>fh", function()
+vim.keymap.set("n", "<leader>fg", function()
 	require("telescope").extensions.file_browser.file_browser({
 		path = "%:p:h",
 		cwd = telescope_buffer_dir(),
