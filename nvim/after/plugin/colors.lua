@@ -43,12 +43,24 @@ vim.g.restacksyj_colorscheme = "rose-pine"
 -- end
 
 function ColorMyPencils(color)
-	color = color or "rose-pine"
+	-- color = color or "rose-pine"
+	-- color = color or "oxocarbon"
 	-- require("kanagawa").setup({
-	-- 	transparent = true,
+	-- 	-- transparent = true,
+	-- 	-- theme = "dragon"
+	-- 	colors = {
+	-- 		theme = {
+	-- 			all = {
+	-- 				ui = {
+	-- 					-- bg_gutter = "none",
+	-- 				},
+	-- 			},
+	-- 		},
+	-- 	},
 	-- })
-	vim.cmd.colorscheme(color)
-	-- vim.cmd("colorscheme kanagawa")
+	-- vim.opt.background = "dark"
+	-- vim.cmd.colorscheme(color)
+	vim.cmd("colorscheme gruvbox-baby")
 
 	vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
 	vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })

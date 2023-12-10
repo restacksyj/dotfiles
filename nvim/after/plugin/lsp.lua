@@ -14,15 +14,15 @@ local source_mapping = {
 	cmp_tabnine = "[TN]",
 	path = "[Path]",
 }
-local tabnine = require("cmp_tabnine.config")
-tabnine:setup({
-	max_lines = 1000,
-	max_num_results = 20,
-	sort = true,
-	run_on_every_keystroke = true,
-	snippet_placeholder = "..",
-})
-
+-- local tabnine = require("cmp_tabnine.config")
+-- tabnine:setup({
+--     max_lines = 1000,
+--     max_num_results = 20,
+--     sort = true,
+--     run_on_every_keystroke = true,
+--     snippet_placeholder = "..",
+-- })
+--
 local capabilities = require("cmp_nvim_lsp").default_capabilities(vim.lsp.protocol.make_client_capabilities())
 local cmp_action = require("lsp-zero").cmp_action()
 
@@ -91,9 +91,10 @@ lsp.on_attach(function(client, bufnr)
 	local opts = { buffer = bufnr, remap = false }
 	local bind = vim.keymap.set
 
-	bind("n", "gd", function()
-		vim.lsp.buf.definition()
-	end, opts)
+	-- bind("n", "gd", function()
+	--     vim.lsp.buf.definition()
+	-- end, opts)
+	bind("n", "gd", "<cmd>Telescope lsp_definitions<CR>", opts)
 	bind("n", "K", function()
 		vim.lsp.buf.hover()
 	end, opts)
@@ -217,6 +218,22 @@ lsp.configure("intelephense", {
 	},
 })
 
+lsp.ensure_installed({
+	"eslint",
+	"rust_analyzer",
+	"tsserver",
+})
+
+lsp.format_on_save({
+	-- format_opts = {
+	--   async = true,
+	--   timeout_ms = 10000,
+	-- },
+	servers = {
+		["null-ls"] = { "lua", "javascript", "typescript" },
+	},
+})
+
 -- lsp.setup({capabilities = capabilities})
 -- require("luasnip.loaders.from_vscode").lazy_load()
 lsp.setup()
@@ -234,6 +251,7 @@ null_ls.setup({
 	sources = {
 		null_ls.builtins.formatting.stylua,
 		null_ls.builtins.code_actions.eslint_d,
+		null_ls.builtins.formatting.eslint_d,
 		-- null_ls.builtins.diagnostics.eslint_d.with({
 		-- 	condition = function(utils)
 		-- 		return utils.root_has_file({
@@ -246,9 +264,9 @@ null_ls.setup({
 		-- 		}) -- and so on
 		-- 	end,
 		-- }),
-		null_ls.builtins.formatting.eslint_d.with({
-			-- args = { "--stdin", "--fix-to-stdout", "--stdin-filename", "%filepath" },
-		}),
+		-- null_ls.builtins.formatting.eslint_d.with({
+		-- args = { "--stdin", "--fix-to-stdout", "--stdin-filename", "%filepath" },
+		-- }),
 		null_ls.builtins.completion.spell,
 		null_ls.builtins.diagnostics.jsonlint,
 		null_ls.builtins.formatting.jq,

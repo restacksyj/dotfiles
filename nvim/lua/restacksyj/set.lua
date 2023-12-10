@@ -51,3 +51,5 @@ vim.opt.foldenable = true
 vim.opt.formatoptions:remove({ "c", "r", "o" })
 
 vim.opt.fixeol = false
+-- set iskeyword-=_
+-- vim.opt.iskeyword:remove("_")

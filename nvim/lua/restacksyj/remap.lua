@@ -44,12 +44,13 @@ vim.keymap.set("n", "<C-j>", "<cmd>cprev<CR>zz")
 -- vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 
 vim.keymap.set("i", "<C-c>", "<Esc>")
-vim.keymap.set("i", "<C-d>", "<C-O>D")
+-- vim.keymap.set("i", "<C-d>", "<C-O>D")
+vim.keymap.set("i", "<C-d>", "<C-[>diwi")
 
 -- vim.keymap.set("n","<leader>f","mF:%!eslint_d --stdin --fix-to-stdout --stdin-filename %<CR>`F")
 vim.keymap.set("n", "<leader>ff", ":lua vim.lsp.buf.format(nil, 2000)<CR>")
 
-vim.keymap.set("n", "<leader>nid", ":IndentBlanklineToggle!<CR>", { silent = true })
+vim.keymap.set("n", "<leader>nid", ":IBLToggle<CR>", { silent = true })
 vim.keymap.set("n", "<leader>ye", "<cmd>%y+<CR>")
 vim.keymap.set("n", "<leader>fp", "<cmd>echo expand('%:p')<CR>")
 vim.keymap.set("n", "<leader>yfp", "<cmd>let @+ = @% | echo 'Copied filepath'<CR>")

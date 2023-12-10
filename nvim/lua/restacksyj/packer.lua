@@ -47,10 +47,10 @@ return require("packer").startup(function(use)
 	-- this is used for folding lines
 	-- use {'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async'}
 
-	use({
-		"kosayoda/nvim-lightbulb",
-		requires = "antoinemadec/FixCursorHold.nvim",
-	})
+	-- use({
+	-- 	"kosayoda/nvim-lightbulb",
+	-- 	requires = "antoinemadec/FixCursorHold.nvim",
+	-- })
 
 	use({
 		"VonHeikemen/lsp-zero.nvim",
@@ -185,12 +185,16 @@ return require("packer").startup(function(use)
 		"folke/todo-comments.nvim",
 		requires = { "nvim-lua/plenary.nvim" },
 	})
-	use({
-		"nosduco/remote-sshfs.nvim",
-		requires = { { "nvim-telescope/telescope.nvim" } }, -- optional if you declare plugin somewhere else
-	})
+	-- use({
+	-- 	"nosduco/remote-sshfs.nvim",
+	-- 	requires = { { "nvim-telescope/telescope.nvim" } }, -- optional if you declare plugin somewhere else
+	-- })
 	-- use({
 	-- 	"AckslD/nvim-neoclip.lua",
 	-- })
 	-- use("xiyaowong/transparent.nvim")
+	use({ "nyoom-engineering/oxocarbon.nvim" })
+	use({ "luisiacc/gruvbox-baby" })
+	-- use({ "mg979/vim-visual-multi" })
+	-- use({ "chrisgrieser/nvim-spider" })
 end)

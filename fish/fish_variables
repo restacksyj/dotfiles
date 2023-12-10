@@ -2,6 +2,7 @@
 # VERSION: 3.0
 SETUVAR --export CC:/usr/bin/gcc
 SETUVAR --export --path DOTENV_CONFIG_PATH:/Users/yashjajoo/\x2econfig/freightbro/\x2eenv\x2eqa
+SETUVAR --export EDITOR:nvim
 SETUVAR --export GITLAB_TOKEN:HxrV9PNjJXh5hzu7Xx7f
 SETUVAR VIRTUAL_ENV_DISABLE_PROMPT:true
 SETUVAR ZO_CMD:zo
@@ -48,6 +49,7 @@ SETUVAR _tide_prompt_11611:\x1d
 SETUVAR _tide_prompt_11708:\x1d
 SETUVAR _tide_prompt_11729:\x1d
 SETUVAR _tide_prompt_11730:\x1d
+SETUVAR _tide_prompt_11740:\x1d
 SETUVAR _tide_prompt_11743:\x1d
 SETUVAR _tide_prompt_11804:\x1d
 SETUVAR _tide_prompt_11896:\x1d
@@ -74,6 +76,7 @@ SETUVAR _tide_prompt_19341:\x1d
 SETUVAR _tide_prompt_19490:\x1d
 SETUVAR _tide_prompt_19597:\x1d
 SETUVAR _tide_prompt_2021:\x1d
+SETUVAR _tide_prompt_20296:\x1d
 SETUVAR _tide_prompt_22164:\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x40PWD\x40\x1b\x5b38\x3b2\x3b148\x3b148\x3b148m\x20\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x1b\x5b37m\x1b\x5b38\x3b2\x3b95\x3b215\x3b0mDEV\x2d8256\x1b\x5b38\x3b2\x3b255\x3b0\x3b0m\x1b\x5b38\x3b2\x3b95\x3b215\x3b0m\x1b\x5b38\x3b2\x3b95\x3b215\x3b0m\x20\x2a29\x1b\x5b38\x3b2\x3b255\x3b0\x3b0m\x1b\x5b38\x3b2\x3b215\x3b175\x3b0m\x1b\x5b38\x3b2\x3b215\x3b175\x3b0m\x20\x212\x1b\x5b38\x3b2\x3b0\x3b175\x3b255m\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x20\x1e\x1b\x5b38\x3b2\x3b95\x3b215\x3b0m\u276f\x1e\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x20\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x1b\x5b38\x3b2\x3b68\x3b136\x3b62m\u2b22\x2016\x2e19\x2e0\x1b\x5b38\x3b2\x3b148\x3b148\x3b148m\x20\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x1b\x5b38\x3b2\x3b95\x3b135\x3b135m04\x3a24\x3a54\x20PM\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm
 SETUVAR _tide_prompt_22783:\x1d
 SETUVAR _tide_prompt_23647:\x1d
@@ -99,6 +102,7 @@ SETUVAR _tide_prompt_3310:\x1d
 SETUVAR _tide_prompt_33285:\x1d
 SETUVAR _tide_prompt_3368:\x1d
 SETUVAR _tide_prompt_3475:\x1d
+SETUVAR _tide_prompt_34887:\x1d
 SETUVAR _tide_prompt_3501:\x1d
 SETUVAR _tide_prompt_35217:\x1d
 SETUVAR _tide_prompt_35218:\x1d
@@ -147,15 +151,16 @@ SETUVAR _tide_prompt_4716:\x1d
 SETUVAR _tide_prompt_4770:\x1d
 SETUVAR _tide_prompt_48225:\x1d
 SETUVAR _tide_prompt_48313:\x1d
+SETUVAR _tide_prompt_48332:\x1d
 SETUVAR _tide_prompt_48439:\x1d
 SETUVAR _tide_prompt_4878:\x1d
 SETUVAR _tide_prompt_4905:\x1d
 SETUVAR _tide_prompt_49278:\x1d
-SETUVAR _tide_prompt_49416:\x1d
 SETUVAR _tide_prompt_4978:\x1d
 SETUVAR _tide_prompt_4980:\x1d
 SETUVAR _tide_prompt_49835:\x1d
 SETUVAR _tide_prompt_50000:\x1d
+SETUVAR _tide_prompt_50044:\x1d
 SETUVAR _tide_prompt_5049:\x1d
 SETUVAR _tide_prompt_5082:\x1d
 SETUVAR _tide_prompt_5085:\x1d
@@ -205,8 +210,11 @@ SETUVAR _tide_prompt_66015:\x1d
 SETUVAR _tide_prompt_66426:\x1d
 SETUVAR _tide_prompt_6643:\x1d
 SETUVAR _tide_prompt_66547:\x1d
+SETUVAR _tide_prompt_66793:\x1d
 SETUVAR _tide_prompt_66869:\x1d
 SETUVAR _tide_prompt_6711:\x1d
+SETUVAR _tide_prompt_67126:\x1d
+SETUVAR _tide_prompt_67170:\x1d
 SETUVAR _tide_prompt_67394:\x1d
 SETUVAR _tide_prompt_6842:\x1d
 SETUVAR _tide_prompt_69514:\x1d
@@ -246,6 +254,7 @@ SETUVAR _tide_prompt_7901:\x1d
 SETUVAR _tide_prompt_7925:\x1d
 SETUVAR _tide_prompt_79331:\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x40PWD\x40\x1b\x5b38\x3b2\x3b148\x3b148\x3b148m\x20\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x1b\x5b37m\x1b\x5b38\x3b2\x3b95\x3b215\x3b0mDEV\x2d8256\x1b\x5b38\x3b2\x3b255\x3b0\x3b0m\x1b\x5b38\x3b2\x3b95\x3b215\x3b0m\x1b\x5b38\x3b2\x3b95\x3b215\x3b0m\x20\x2a29\x1b\x5b38\x3b2\x3b255\x3b0\x3b0m\x1b\x5b38\x3b2\x3b215\x3b175\x3b0m\x1b\x5b38\x3b2\x3b215\x3b175\x3b0m\x20\x212\x1b\x5b38\x3b2\x3b0\x3b175\x3b255m\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x20\x1e\x1b\x5b38\x3b2\x3b95\x3b215\x3b0m\u276f\x1e\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x20\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x1b\x5b38\x3b2\x3b68\x3b136\x3b62m\u2b22\x2016\x2e19\x2e0\x1b\x5b38\x3b2\x3b148\x3b148\x3b148m\x20\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x1b\x5b38\x3b2\x3b95\x3b135\x3b135m03\x3a24\x3a35\x20PM\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm
 SETUVAR _tide_prompt_7998:\x1d
+SETUVAR _tide_prompt_80196:\x1d
 SETUVAR _tide_prompt_80206:\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x40PWD\x40\x1b\x5b38\x3b2\x3b148\x3b148\x3b148m\x20\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x1b\x5b37m\x1b\x5b38\x3b2\x3b95\x3b215\x3b0mDEV\x2d8256\x1b\x5b38\x3b2\x3b255\x3b0\x3b0m\x1b\x5b38\x3b2\x3b95\x3b215\x3b0m\x1b\x5b38\x3b2\x3b95\x3b215\x3b0m\x20\x2a29\x1b\x5b38\x3b2\x3b255\x3b0\x3b0m\x1b\x5b38\x3b2\x3b215\x3b175\x3b0m\x1b\x5b38\x3b2\x3b215\x3b175\x3b0m\x20\x212\x1b\x5b38\x3b2\x3b0\x3b175\x3b255m\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x20\x1e\x1b\x5b38\x3b2\x3b95\x3b215\x3b0m\u276f\x1e\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x20\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x1b\x5b38\x3b2\x3b68\x3b136\x3b62m\u2b22\x2016\x2e15\x2e0\x1b\x5b38\x3b2\x3b148\x3b148\x3b148m\x20\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x1b\x5b38\x3b2\x3b95\x3b135\x3b135m03\x3a26\x3a07\x20PM\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm
 SETUVAR _tide_prompt_8030:\x1d
 SETUVAR _tide_prompt_806:\x1d
@@ -291,6 +300,7 @@ SETUVAR _tide_prompt_91238:\x1d
 SETUVAR _tide_prompt_9159:\x1d
 SETUVAR _tide_prompt_91780:\x1d
 SETUVAR _tide_prompt_9220:\x1d
+SETUVAR _tide_prompt_92286:\x1d
 SETUVAR _tide_prompt_923:\x1d
 SETUVAR _tide_prompt_92991:\x1d
 SETUVAR _tide_prompt_94953:\x1d
@@ -321,7 +331,7 @@ SETUVAR _tide_prompt_98187:\x1d
 SETUVAR _tide_prompt_98193:\x1d
 SETUVAR _tide_prompt_98197:\x1d
 SETUVAR _tide_prompt_98218:\x1d
-SETUVAR _tide_right_items:status\x1ecmd_duration\x1econtext\x1ejobs\x1enode\x1evirtual_env\x1erustc\x1ejava\x1etime
+SETUVAR _tide_right_items:status\x1ecmd_duration\x1econtext\x1ejobs\x1enode\x1evirtual_env\x1erustc\x1ejava\x1ephp\x1ego\x1ekubectl\x1eterraform\x1etime
 SETUVAR fish_color_autosuggestion:555\x1ebrblack
 SETUVAR fish_color_cancel:\x2dr
 SETUVAR fish_color_command:blue
@@ -350,7 +360,7 @@ SETUVAR fish_pager_color_description:B3A06D\x1eyellow\x1e\x2di
 SETUVAR fish_pager_color_prefix:cyan\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
 SETUVAR fish_pager_color_selected_background:\x2dr
-SETUVAR fish_user_paths:/Users/yashjajoo/\x2econfig/local/scripts\x1e/Users/yashjajoo/go/bin\x1e/Users/yashjajoo/\x2elocal/bin\x1e/Users/yashjajoo/Documents/personal/projects/zig/build/stage3/bin
+SETUVAR fish_user_paths:/Users/yashjajoo/\x2econfig/local/scripts\x1e/Users/yashjajoo/go/bin\x1e/Users/yashjajoo/\x2elocal/bin\x1e/Users/yashjajoo/Documents/personal/projects/zig/build/stage3/bin\x1e/Users/yashjajoo/development/flutter/bin\x1e/Users/yashjajoo/\x2epub\x2dcache/bin
 SETUVAR nvm_data:/Users/yashjajoo/\x2elocal/share/nvm
 SETUVAR nvm_default_version:v16\x2e19\x2e0
 SETUVAR nvm_mirror:https\x3a//nodejs\x2eorg/dist

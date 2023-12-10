@@ -39,3 +39,6 @@ discharging_symbol = "💦"
 symbol = '⚡️ '
 # [line_break]
 # disabled = true
+
+[directory.substitutions]
+"~/Documents/freightbro" = "@freightify"

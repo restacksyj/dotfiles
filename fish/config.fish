@@ -39,6 +39,7 @@ alias gs="git status"
 alias ga="git add"
 alias gfa="git fetch --all"
 alias gsw="git switch"
+alias gswp="git switch -"
 alias gpl="git pull origin (current_branch)"
 alias gpu="git push origin (current_branch)"
 # alias parent_branch="(parent)"
@@ -46,6 +47,7 @@ alias v="fd --type f --hidden --exclude .git | fzf-tmux -p --reverse | xargs nvi
 alias f="z"
 alias dy="dig +noall +answer +additional $argv @dns.toys"
 alias fl="redis-cli FLUSHDB"
+alias goo="go mod tidy && go mod vendor"
 
 
 function vi
@@ -53,6 +55,18 @@ function vi
         nvim $argv
     else
         nvim .
+    end
+end
+
+function gog
+    if count $argv > /dev/null
+        # set cwd (echo (pwd))
+        # cd $cwd
+        cd ~/Documents/freightbro/f5-go-core-utils/
+        set output (go get gitlab.freightify.in/generic/f5-models-go@$argv);
+        echo $output
+        go mod tidy && go mod vendor
+        cd ~/Documents/freightbro/f5-models-go/
     end
 end
 
@@ -68,3 +82,6 @@ export PATH="$HOME/.cargo/bin:$PATH"
 # :/Users/yashjajoo/.local/share/solana/install/active_release/bin:/Users/yashjajoo/opt/anaconda3/bin:/Users/yashjajoo/opt/anaconda3/condabin:/Users/yashjajoo/.local/share/nvm/v12.22.12/bin:/usr/local/opt/php@7.1/sbin:/usr/local/opt/php@7.1/bin:/usr/local/opt/php@7.3/sbin:/usr/local/opt/php@7.3/bin:/usr/local/opt/php@7.2/sbin:/usr/local/opt/php@7.2/bin:/Users/yashjajoo/.fig/bin:/Users/yashjajoo/Documents/development/flutter/bin:/Users/yashjajoo/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/usr/local/share/dotnet:~/.dotnet/tools:/usr/local/go/bin:/Applications/Wireshark.app/Contents/MacOS:/Applications/kitty.app/Contents/MacOS:/Applications/Visual Studio Code.app/Contents/Resources/app/bin
 
 set -q GHCUP_INSTALL_BASE_PREFIX[1]; or set GHCUP_INSTALL_BASE_PREFIX $HOME ; set -gx PATH $HOME/.cabal/bin /Users/yashjajoo/.ghcup/bin $PATH # ghcup-env
+bind yy fish_clipboard_copy
+bind Y fish_clipboard_copy
+bind p fish_clipboard_paste

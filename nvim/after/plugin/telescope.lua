@@ -17,7 +17,8 @@ require("telescope").setup({
 		mappings = {
 			i = {
 				["<C-x>"] = false,
-				["<C-q>"] = actions.send_to_qflist,
+				-- ["<C-q>"] = actions.send_to_qflist,
+				["<C-q>"] = actions.smart_send_to_qflist,
 				["<CR>"] = actions.select_default,
 			},
 			n = {
@@ -61,7 +62,7 @@ require("telescope").setup({
 
 require("telescope").load_extension("file_browser")
 require("telescope").load_extension("fzf")
-require("telescope").load_extension("remote-sshfs")
+-- require("telescope").load_extension("remote-sshfs")
 
 vim.keymap.set("n", "<C-p>", function()
 	builtin.find_files({
@@ -108,7 +109,7 @@ end, {})
 vim.keymap.set("n", "<leader>vrc", function()
 	builtin.find_files({
 		prompt_title = "< Dotfiles >",
-		cwd = "~/.config",
+		cwd = "~/.config/nvim",
 		hidden = true,
 	})
 end, {})
